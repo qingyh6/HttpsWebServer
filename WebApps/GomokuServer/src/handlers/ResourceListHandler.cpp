@@ -53,9 +53,10 @@ void ResourceListHandler::handle(const http::HttpRequest &req, http::HttpRespons
 std::string ResourceListHandler::formatFileTime(std::filesystem::file_time_type ftime) {
     auto sctp = std::chrono::time_point_cast<std::chrono::system_clock::duration>(
         ftime - fs::file_time_type::clock::now() + std::chrono::system_clock::now()
-    );
-    std::time_t cftime = std::chrono::system_clock::to_time_t(sctp);
+    );//将文件时间转换成系统时间
+    std::time_t cftime = std::chrono::system_clock::to_time_t(sctp); //将系统时钟时间点转换为C标准库的time_t类型
     std::stringstream ss;
+    //将time_t转换为本地时间的tm结构,并按照指定格式（"%Y-%m-%d %H:%M"格式化时间
     ss << std::put_time(std::localtime(&cftime), "%Y-%m-%d %H:%M");
     return ss.str();
 }

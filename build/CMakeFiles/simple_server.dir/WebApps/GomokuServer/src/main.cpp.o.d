@@ -468,6 +468,7 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: \
  /root/HttpsServer/WebApps/GomokuServer/include/../../../HttpServer/include/http/../middleware/cors/CorsMiddleware.h \
  /root/HttpsServer/WebApps/GomokuServer/include/../../../HttpServer/include/http/../middleware/cors/CorsConfig.h \
  /root/HttpsServer/WebApps/GomokuServer/include/../../../HttpServer/include/http/../middleware/limit/LimitMiddleware.h \
+ /root/HttpsServer/WebApps/GomokuServer/include/../../../HttpServer/include/http/../middleware/gzip/GzipMiddleware.h \
  /root/HttpsServer/WebApps/GomokuServer/include/../../../HttpServer/include/http/../ssl/SslConnection.h \
  /root/HttpsServer/WebApps/GomokuServer/include/../../../HttpServer/include/http/../ssl/SslContext.h \
  /root/HttpsServer/WebApps/GomokuServer/include/../../../HttpServer/include/http/../ssl/SslConfig.h \

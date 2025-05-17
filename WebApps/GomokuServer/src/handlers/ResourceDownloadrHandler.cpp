@@ -37,7 +37,6 @@ void ResourceDownloadHandler::handle(const http::HttpRequest &req, http::HttpRes
         if (!file.isValid())
         {
             LOG_WARN << filePath << "not exist.";
-            // 文件不存在
             resp->setStatusLine(req.getVersion(), http::HttpResponse::k404NotFound, "Not Found");
             resp->setContentType("text/plain");
             std::string resp_info="File not found";

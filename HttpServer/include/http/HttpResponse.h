@@ -14,6 +14,7 @@ public:
         k200Ok = 200,
         
         k204NoContent = 204,
+        k206PartialContent=206,
         k301MovedPermanently = 301,
         k400BadRequest = 400,
         k401Unauthorized = 401,
@@ -60,6 +61,25 @@ public:
     { 
         body_ = body;
         // body_ += "\0";
+    }
+
+    //这是我自己定义的，专门用于中间件gzip压缩。
+    std::string getBody() const
+    { 
+        return body_;
+    }
+    bool isShouldGzipCompress() 
+    {   
+        if (body_.size()<256)
+            return false;
+        std::string contentType=headers_["Content-Type"];
+        return contentType.find("text/") != std::string::npos ||
+               contentType.find("application/json") != std::string::npos ||
+               contentType.find("application/javascript") != std::string::npos ||
+               contentType.find("application/xml") != std::string::npos ||
+               contentType.find(".js") != std::string::npos ||
+               contentType.find(".css") != std::string::npos ||
+               contentType.find(".html") != std::string::npos; 
     }
 
     void setStatusLine(const std::string& version,

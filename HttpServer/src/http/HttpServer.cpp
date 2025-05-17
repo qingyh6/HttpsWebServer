@@ -211,7 +211,7 @@ void HttpServer::handleRequest(const HttpRequest &req, HttpResponse *resp)
         // 路由处理
         if (!router_.route(mutableReq, resp))
         {
-            LOG_INFO << "请求的啥，url：" << req.method() << " " << req.path();
+            LOG_INFO << "请求的路由，url：" << req.method() << " " << req.path();
             LOG_INFO << "未找到路由，返回404";
             resp->setStatusCode(HttpResponse::k404NotFound);
             resp->setStatusMessage("Not Found");

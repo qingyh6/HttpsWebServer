@@ -345,6 +345,7 @@ CMakeFiles/simple_server.dir/HttpServer/src/http/HttpServer.cpp.o: \
  /root/HttpsServer/HttpServer/src/http/../../include/http/../middleware/limit/LimitMiddleware.h \
  /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
+ /root/HttpsServer/HttpServer/src/http/../../include/http/../middleware/gzip/GzipMiddleware.h \
  /root/HttpsServer/HttpServer/src/http/../../include/http/../ssl/SslConnection.h \
  /root/HttpsServer/HttpServer/src/http/../../include/http/../ssl/SslContext.h \
  /root/HttpsServer/HttpServer/src/http/../../include/http/../ssl/SslConfig.h \

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>视频播放</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      width: 360px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+    }
+
+    .thumbnail-container {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 64px;
+      height: 64px;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .play-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+
+    .info {
+      padding: 16px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    #menu-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 1em;
+      color: #00a1d6;
+      cursor: pointer;
+      text-shadow: 0 0 5px #00c3ff;
+    }
+
+    .placeholder {
+      padding: 60px;
+      font-size: 16px;
+      color: #888;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu-button">返回菜单</div>
+  <div id="video-container">
+    <div class="card">
+      <div class="placeholder">正在加载视频信息，请稍候...</div>
+    </div>
+  </div>
+
+  <script>
+    const videoName = "video2"; // 可动态设置
+
+    function Menu() {
+      window.location.href = '/menu';
+    }
+    document.getElementById('menu-button').addEventListener('click', Menu);
+
+    function playVideo(url) {
+      const container = document.getElementById("video-container");
+      const videoHTML = `
+        <div class="card">
+          <video controls autoplay>
+            <source src="${url}" type="video/mp4">
+            您的浏览器不支持视频播放。
+          </video>
+          <div class="info">
+            <div>正在播放：${url.split('/').pop()}</div>
+          </div>
+        </div>
+      `;
+      container.innerHTML = videoHTML;
+    }
+
+    window.addEventListener('load', () => {
+      fetch(`/metadata`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ videoName })
+      })
+        .then(res => res.json())
+        .then(data => {
+          const container = document.getElementById('video-container');
+          container.innerHTML = `
+            <div class="card">
+              <div class="thumbnail-container" onclick="playVideo('${data.video_url}')">
+                <img class="thumbnail" src="${data.thumbnail}" alt="缩略图">
+                <div class="play-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="info">
+                <div>文件名: ${data.name}</div>
+                <div>时长: ${data.duration.toFixed(2)} 秒</div>
+              </div>
+            </div>
+          `;
+        })
+        .catch(err => {
+          const container = document.getElementById('video-container');
+          container.innerHTML = `
+            <div class="card">
+              <div class="placeholder">未能加载视频元信息，请稍后重试。</div>
+            </div>
+          `;
+        });
+    });
+  </script>
+</body>
+</html>

@@ -63,6 +63,7 @@ add_executable(simple_server
     ${GOMOKU_SERVER_SRC}
 )
 
+
 # 链接必要的库
 target_link_libraries(simple_server
     pthread
@@ -72,6 +73,7 @@ target_link_libraries(simple_server
     mysqlclient
     ssl
     crypto
+    z  #添加 zlib 链接
 )
 
 # 打印调试信息

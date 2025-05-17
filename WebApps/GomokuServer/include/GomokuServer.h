@@ -103,7 +103,12 @@ private:
     friend class ResourceListHandler;
     friend class ResourceUploadHandler;
     friend class ResourceDownloadHandler;
+    friend class ResourceDeleteHandler;
       friend class BackendStatusHandler;
+
+    friend class VideoCentorHandler;
+    friend class VideoMetaHandler;
+    friend class VideoStreamHandler;
 
 private:
     enum GameType

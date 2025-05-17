@@ -151,37 +151,14 @@
         <div id="resource_centor" class="menu-option">访问资源中心 </div>
       </div>
       <div class="card">
-        <h2>📊 状态监控</h2>
+        <h2>📊 视频中心</h2>
         <p>查看缓存命中、限流速率和压缩比</p>
         <div id="backend_status" class="menu-option">查看状态 </div>
       </div>
     </div>
   </div>
   <script>
-
-        // // 后台管理跳转（用fetch方式）
-        // function goToBackend() {
-        //     fetch('/backend', {
-        //         method: 'GET',
-        //         headers: {
-        //             'Accept': 'text/html'
-        //         }
-        //     })
-        //     .then(response => response.text())
-        //     .then(html => {
-        //         document.open();
-        //         document.write(html);
-        //         document.close();
-        //     })
-        //     .catch(error => {
-        //         console.error('Error:', error);
-        //         alert('跳转后台失败，请稍后重试！');
-        //     });
-        // }
-
-        // // 绑定点击事件到后台管理按钮
-        // document.getElementById('backend-button').addEventListener('click', goToBackend);
-        
+       
         document.addEventListener('DOMContentLoaded', function() {
             console.log('Page loaded'); // 调试日志
             
@@ -258,7 +235,6 @@
 
         // 绑定点击事件到对战AI按钮
         document.getElementById('play-ai').addEventListener('click', startAiGame);
-
         //##########################################################################
 
 
@@ -266,22 +242,6 @@
         // 资源中心跳转（用fetch方式）
         function goToResourceCentor() {
           window.location.href = '/resource_centor';
-            // fetch('/resource_centor', {
-            //     method: 'GET',
-            //     headers: {
-            //         'Accept': 'text/html'
-            //     }
-            // })
-            // .then(response => response.text())
-            // .then(html => {
-            //     document.open();
-            //     document.write(html);
-            //     document.close();
-            // })
-            // .catch(error => {
-            //     console.error('Error:', error);
-            //     alert('跳转失败，请稍后重试！');
-            // });
         }
 
         // 绑定点击事件到后台管理按钮
@@ -289,26 +249,9 @@
 
 
 
-        //后台监控跳转（用fetch方式）
-        function goToBackendStatus() {
-          window.location.href = '/backend_status';
 
-            // fetch('/backend_status', {
-            //     method: 'GET',
-            //     headers: {
-            //         'Accept': 'text/html'
-            //     }
-            // })
-            // .then(response => response.text())
-            // .then(html => {
-            //     document.open();
-            //     document.write(html);
-            //     document.close();
-            // })
-            // .catch(error => {
-            //     console.error('Error:', error);
-            //     alert('跳转失败，请稍后重试！');
-            // });
+        function goToBackendStatus() {
+          window.location.href = '/video_centor';
         }
 
         // 绑定点击事件到后台管理按钮

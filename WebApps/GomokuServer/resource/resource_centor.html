@@ -154,6 +154,29 @@
         color: #555;
         }
 
+        .btn {
+        padding: 4px 10px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        }
+
+        .btn-download {
+        background-color: #4caf50;
+        color: white;
+        }
+
+        .btn-delete {
+        background-color: #f44336;
+        color: white;
+        }
+
+        .btn:hover {
+        opacity: 0.85;
+        }
+
 
     </style>
 </head>
@@ -167,7 +190,6 @@
             <form id="uploadForm"  method="post" enctype="multipart/form-data">
                 <label>选择文件：</label><br />
                 <input type="file" name="file" id="uploadResource" required /><br />
-                <label><input type="checkbox" name="gzip" /> 启用 Gzip 压缩</label><br />
                 <button type="submit" id="resource_upload">上传</button>
             </form>
             <div id="alert" class="alert">请选择一个文件！</div>
@@ -183,13 +205,14 @@
                         <!-- <th>预览</th> -->
                         <th>上传时间</th>
                         <th>状态</th>
+                        <th>操作</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>example.zip</td>
-                        <td>2025-05-10 13:42</td>
-                        <td class="status">等待下载</td>
+                        <!-- <td>文件名</td>
+                        <td>2025.1.6</td>
+                        <td>等待下载</td> -->
                     </tr>
                 </tbody>
             </table>
@@ -211,13 +234,6 @@
                 return;
             }
 
-              // 输出选择的文件信息
-            console.log("Selected file:", file);
-            console.log("File name:", file.name);
-            console.log("File size:", file.size);
-            console.log("File type:", file.type);
-            console.log("File webkitRelativePath:", file.webkitRelativePath); // 输出相对路径
-
             alert.style.display = 'none'; // 隐藏警告
             status.textContent = '状态：上传中...';
 
@@ -232,23 +248,21 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.status === 'success') {
-                        console.log("进入解析");
                         alert.style.display = 'none'; // 隐藏警告
                         status.textContent = '状态：上传成功！';
 
-
-                          // 动态更新表格（模拟文件记录追加）
+                        // 动态更新表格（模拟文件记录追加）
                         const file = document.getElementById('uploadResource').files[0];
                         const tableBody = document.querySelector('.file-list tbody');
-
                         const row = document.createElement('tr');
 
                         const nameCell = document.createElement('td');
-                        nameCell.innerHTML = `<span class="download-link">${file.name} ⬇️</span>`;
+                        nameCell.textContent = file.name;
 
                         const timeCell = document.createElement('td');
-                        timeCell.textContent = data.uploadTime || '未知时间';
+                        timeCell.textContent = data.uploadTime|| '未知时间';
 
+                        // 状态栏
                         const statusCell = document.createElement('td');
                         const progressContainer = document.createElement('div');
                         progressContainer.className = 'progress-container';
@@ -265,20 +279,71 @@
                         statusCell.appendChild(progressContainer);
                         statusCell.appendChild(statusText);
 
-                        nameCell.addEventListener('click', (e) => {
+                        // 操作栏：下载 + 删除按钮
+                        const actionCell = document.createElement('td');
+                        const downloadBtn = document.createElement('button');
+                        downloadBtn.textContent = '⬇️ 下载';
+                        downloadBtn.className = 'btn btn-download';
+
+                        const deleteBtn = document.createElement('button');
+                        deleteBtn.textContent = '🗑️ 删除';
+                        deleteBtn.className = 'btn btn-delete';
+
+                        // 下载按钮事件
+                        downloadBtn.addEventListener('click', (e) => {
                             e.preventDefault();
                             statusText.textContent = '准备下载...';
                             progressBar.style.width = '0%';
-                            downloadFile('/root/uploads/'+file.name, file.name, progressBar, statusText);
+                            // downloadFile('/root/uploads/videos/'+file.name, file.name, progressBar, statusText);
+                                // 判断文件后缀
+                                if (lowerName.endsWith('.mp4') || lowerName.endsWith('.avi') || lowerName.endsWith('.mov') || lowerName.endsWith('.mkv')) {
+                                    // 视频类文件
+                                    downloadFile('/root/uploads/videos/' + fileName, fileName, progressBar, statusText);
+                                } else {
+                                    // 其他文件
+                                    downloadFile('/root/uploads/' + fileName, fileName, progressBar, statusText);
+                                }
                         });
+
+                        // 删除按钮事件
+                        deleteBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            if (confirm(`确定要删除文件 ${file.name} 吗？`)) {
+                                fetch('/resource/delete', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                    },
+                                    body: JSON.stringify({ filename: file.name })
+                                })
+                                .then(res => res.json())
+                                .then(res => {
+                                    console.log("返回 JSON：", res);
+                                    console.log("返回 JSON,status：", res.status);
+                                    if (res.status == 'success') {
+                                        row.remove();
+                                        alert('删除成功');
+                                    } else {
+                                        alert('删除失败：' + res.message);
+                                    }
+                                })
+                                .catch(err => {
+                                    console.error('删除失败:', err);
+                                    alert('删除失败');
+                                });
+                            }
+                        });
+
+                        actionCell.appendChild(downloadBtn);
+                        actionCell.appendChild(deleteBtn);
 
                         row.appendChild(nameCell);
                         row.appendChild(timeCell);
                         row.appendChild(statusCell);
+                        row.appendChild(actionCell);
 
-                        // 插入表格第一行
                         tableBody.insertBefore(row, tableBody.firstChild);
-
 
                     } else {
                         alert.style.display = 'block';
@@ -334,30 +399,31 @@
         fetch('/resource/download', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ resourceId })
+            body: JSON.stringify({ resourceId }) //通过post方式将要下载的文件路径发送给后端
         })
             .then(response => {
             if (!response.ok) {
                 throw new Error('下载失败');
             }
             const contentLength = response.headers.get('Content-Length');
-            const total = contentLength ? parseInt(contentLength, 10) : 0;
+            const total = contentLength ? parseInt(contentLength, 10) : 0;//返回内容长度
 
-            const reader = response.body.getReader();
+            const reader = response.body.getReader(); //这个可以逐块提供body
             const chunks = [];
             let received = 0;
 
-            const pump = () => reader.read().then(({ done, value }) => {
-                if (done) {
-                const blob = new Blob(chunks);
-                const url = window.URL.createObjectURL(blob);
+            const pump = () => reader.read()
+            .then(({ done, value }) => {
+                if (done) {//如果读取完成，整个文件已下载
+                const blob = new Blob(chunks);//将所有小段chunks转换成一个完成的blob(binary large object)
+                const url = window.URL.createObjectURL(blob);//浏览器创建一个临时的URL地址来获取这个数据
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = filename;
                 document.body.appendChild(a);
-                a.click();
+                a.click();//模拟点击浏览器的下载行为
                 document.body.removeChild(a);
-                window.URL.revokeObjectURL(url);
+                window.URL.revokeObjectURL(url);//避免内存泄露
 
                 progressBar.style.width = '100%';
                 statusText.textContent = '下载完成';
@@ -365,7 +431,7 @@
                 }
                 chunks.push(value);
                 received += value.length;
-
+                //更新下载进度
                 if (total > 0) {
                 const percent = Math.floor((received / total) * 100);
                 progressBar.style.width = percent + '%';
@@ -374,7 +440,7 @@
                 } else {
                 statusText.textContent = `下载中（未知大小）`;
                 }
-
+                //递归调用 pump（继续读取下一段）
                 return pump();
             });
 
@@ -393,51 +459,95 @@
             fetch('/resource/list')
                 .then(response => response.json())
                 .then(data => {
-                    if (data.status === 'success') {
+                    if (data.status == 'success') {
                         const tableBody = document.querySelector('.file-list tbody');
                         tableBody.innerHTML = ''; // 清空原有行
 
-                        data.files.forEach(file => {
-                            const row = document.createElement('tr');
+                    data.files.forEach(file => {
+                        const row = document.createElement('tr');
 
-                            const nameCell = document.createElement('td');
-                            nameCell.innerHTML = `<span class="download-link">${file.filename} ⬇️</span>`;
+                        const nameCell = document.createElement('td');
+                        nameCell.textContent = file.filename;
 
+                        const timeCell = document.createElement('td');
+                        timeCell.textContent = file.uploadTime;
 
+                        // 状态栏
+                        const statusCell = document.createElement('td');
+                        const progressContainer = document.createElement('div');
+                        progressContainer.className = 'progress-container';
 
-                            const timeCell = document.createElement('td');
-                            timeCell.textContent = file.uploadTime;
+                        const progressBar = document.createElement('div');
+                        progressBar.className = 'progress-bar';
 
-                            // 状态栏：进度条容器
-                            const statusCell = document.createElement('td');
-                            const progressContainer = document.createElement('div');
-                            progressContainer.className = 'progress-container';
+                        progressContainer.appendChild(progressBar);
 
-                            const progressBar = document.createElement('div');
-                            progressBar.className = 'progress-bar';
+                        const statusText = document.createElement('div');
+                        statusText.className = 'status-text';
+                        statusText.textContent = '等待下载';
 
-                            progressContainer.appendChild(progressBar);
+                        statusCell.appendChild(progressContainer);
+                        statusCell.appendChild(statusText);
 
-                            const statusText = document.createElement('div');
-                            statusText.className = 'status-text';
-                            statusText.textContent = '等待下载';
+                        // 操作栏：下载 + 删除按钮
+                        const actionCell = document.createElement('td');
+                        const downloadBtn = document.createElement('button');
+                        downloadBtn.textContent = '⬇️ 下载';
+                        downloadBtn.className = 'btn btn-download';
 
-                            statusCell.appendChild(progressContainer);
-                            statusCell.appendChild(statusText);
+                        const deleteBtn = document.createElement('button');
+                        deleteBtn.textContent = '🗑️ 删除';
+                        deleteBtn.className = 'btn btn-delete';
 
-                            nameCell.addEventListener('click', (e) => {
-                                e.preventDefault();
-                                statusText.textContent = '准备下载...';
-                                progressBar.style.width = '0%';
-                                downloadFile(file.relativePath, file.filename, progressBar, statusText);
-                            });
-
-                            row.appendChild(nameCell);
-                            row.appendChild(timeCell);
-                            row.appendChild(statusCell);
-
-                            tableBody.appendChild(row);
+                        // 下载按钮事件
+                        downloadBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            statusText.textContent = '准备下载...';
+                            progressBar.style.width = '0%';
+                            downloadFile(file.relativePath, file.filename, progressBar, statusText);
                         });
+
+                        // 删除按钮事件
+                        deleteBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            if (confirm(`确定要删除文件 ${file.filename} 吗？`)) {
+                                fetch('/resource/delete', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                    },
+                                    body: JSON.stringify({ filename: file.filename })
+                                })
+                                .then(res => res.json())
+                                .then(res => {
+                                    console.log("返回 JSON：", res);
+                                    console.log("返回 JSON,status：", res.status);
+                                    if (res.status == 'success') {
+                                        row.remove();
+                                        alert('删除成功');
+                                    } else {
+                                        alert('删除失败：' + res.message);
+                                    }
+                                })
+                                .catch(err => {
+                                    console.error('删除失败:', err);
+                                    alert('删除失败');
+                                });
+                            }
+                        });
+
+                        actionCell.appendChild(downloadBtn);
+                        actionCell.appendChild(deleteBtn);
+
+                        row.appendChild(nameCell);
+                        row.appendChild(timeCell);
+                        row.appendChild(statusCell);
+                        row.appendChild(actionCell);
+
+                        tableBody.appendChild(row);
+                    });
+
                     } else {
                         console.error("获取上传历史失败");
                     }
@@ -447,8 +557,10 @@
                 });
         }
         
+        
         // 页面加载后执行
         window.addEventListener('load', () => {
+            console.log("加载页面")
             loadUploadHistory();
         });
 

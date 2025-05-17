@@ -355,6 +355,7 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o: \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/../../../../HttpServer/include/http/../middleware/cors/CorsMiddleware.h \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/../../../../HttpServer/include/http/../middleware/cors/CorsConfig.h \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/../../../../HttpServer/include/http/../middleware/limit/LimitMiddleware.h \
+ /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/../../../../HttpServer/include/http/../middleware/gzip/GzipMiddleware.h \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/../../../../HttpServer/include/http/../ssl/SslConnection.h \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/../../../../HttpServer/include/http/../ssl/SslContext.h \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/../../../../HttpServer/include/http/../ssl/SslConfig.h \
@@ -512,4 +513,8 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o: \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/ResourceListHandler.h \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/ResourceUploadHandler.h \
  /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/ResourceDownloadHandler.h \
- /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/BackendStatusHandler.h
+ /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/ResourceDeleteHandler.h \
+ /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/BackendStatusHandler.h \
+ /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/VideoCentorHandler.h \
+ /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/VideoMetaHandler.h \
+ /root/HttpsServer/WebApps/GomokuServer/src/../include/handlers/VideoStreamHandler.h

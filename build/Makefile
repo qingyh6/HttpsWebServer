@@ -273,6 +273,30 @@ HttpServer/src/middleware/cors/CorsMiddleware.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/HttpServer/src/middleware/cors/CorsMiddleware.cpp.s
 .PHONY : HttpServer/src/middleware/cors/CorsMiddleware.cpp.s
 
+HttpServer/src/middleware/gzip/GzipMiddleware.o: HttpServer/src/middleware/gzip/GzipMiddleware.cpp.o
+.PHONY : HttpServer/src/middleware/gzip/GzipMiddleware.o
+
+# target to build an object file
+HttpServer/src/middleware/gzip/GzipMiddleware.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/HttpServer/src/middleware/gzip/GzipMiddleware.cpp.o
+.PHONY : HttpServer/src/middleware/gzip/GzipMiddleware.cpp.o
+
+HttpServer/src/middleware/gzip/GzipMiddleware.i: HttpServer/src/middleware/gzip/GzipMiddleware.cpp.i
+.PHONY : HttpServer/src/middleware/gzip/GzipMiddleware.i
+
+# target to preprocess a source file
+HttpServer/src/middleware/gzip/GzipMiddleware.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/HttpServer/src/middleware/gzip/GzipMiddleware.cpp.i
+.PHONY : HttpServer/src/middleware/gzip/GzipMiddleware.cpp.i
+
+HttpServer/src/middleware/gzip/GzipMiddleware.s: HttpServer/src/middleware/gzip/GzipMiddleware.cpp.s
+.PHONY : HttpServer/src/middleware/gzip/GzipMiddleware.s
+
+# target to generate assembly for a file
+HttpServer/src/middleware/gzip/GzipMiddleware.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/HttpServer/src/middleware/gzip/GzipMiddleware.cpp.s
+.PHONY : HttpServer/src/middleware/gzip/GzipMiddleware.cpp.s
+
 HttpServer/src/middleware/limit/LimitMiddleware.o: HttpServer/src/middleware/limit/LimitMiddleware.cpp.o
 .PHONY : HttpServer/src/middleware/limit/LimitMiddleware.o
 
@@ -801,6 +825,30 @@ WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s
 .PHONY : WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s
 
+WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.o: WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.o
+
+# target to build an object file
+WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o
+
+WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.i: WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.i
+
+# target to preprocess a source file
+WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i
+
+WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.s: WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.s
+
+# target to generate assembly for a file
+WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s
+
 WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.o: WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o
 .PHONY : WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.o
 
@@ -873,6 +921,78 @@ WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s
 .PHONY : WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s
 
+WebApps/GomokuServer/src/handlers/VideoCentorHandler.o: WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.o
+
+# target to build an object file
+WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o
+
+WebApps/GomokuServer/src/handlers/VideoCentorHandler.i: WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.i
+
+# target to preprocess a source file
+WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i
+
+WebApps/GomokuServer/src/handlers/VideoCentorHandler.s: WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.s
+
+# target to generate assembly for a file
+WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s
+
+WebApps/GomokuServer/src/handlers/VideoMetaHandler.o: WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.o
+
+# target to build an object file
+WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o
+
+WebApps/GomokuServer/src/handlers/VideoMetaHandler.i: WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.i
+
+# target to preprocess a source file
+WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i
+
+WebApps/GomokuServer/src/handlers/VideoMetaHandler.s: WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.s
+
+# target to generate assembly for a file
+WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s
+
+WebApps/GomokuServer/src/handlers/VideoStreamHandler.o: WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.o
+
+# target to build an object file
+WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o
+.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o
+
+WebApps/GomokuServer/src/handlers/VideoStreamHandler.i: WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.i
+
+# target to preprocess a source file
+WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i
+.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i
+
+WebApps/GomokuServer/src/handlers/VideoStreamHandler.s: WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.s
+
+# target to generate assembly for a file
+WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s
+.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s
+
 WebApps/GomokuServer/src/main.o: WebApps/GomokuServer/src/main.cpp.o
 .PHONY : WebApps/GomokuServer/src/main.o
 
@@ -924,6 +1044,9 @@ help:
 	@echo "... HttpServer/src/middleware/cors/CorsMiddleware.o"
 	@echo "... HttpServer/src/middleware/cors/CorsMiddleware.i"
 	@echo "... HttpServer/src/middleware/cors/CorsMiddleware.s"
+	@echo "... HttpServer/src/middleware/gzip/GzipMiddleware.o"
+	@echo "... HttpServer/src/middleware/gzip/GzipMiddleware.i"
+	@echo "... HttpServer/src/middleware/gzip/GzipMiddleware.s"
 	@echo "... HttpServer/src/middleware/limit/LimitMiddleware.o"
 	@echo "... HttpServer/src/middleware/limit/LimitMiddleware.i"
 	@echo "... HttpServer/src/middleware/limit/LimitMiddleware.s"
@@ -990,6 +1113,9 @@ help:
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceCentorHandler.o"
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceCentorHandler.i"
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceCentorHandler.s"
+	@echo "... WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.o"
+	@echo "... WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.i"
+	@echo "... WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.s"
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.o"
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.i"
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.s"
@@ -999,6 +1125,15 @@ help:
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.o"
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.i"
 	@echo "... WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.s"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoCentorHandler.o"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoCentorHandler.i"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoCentorHandler.s"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoMetaHandler.o"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoMetaHandler.i"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoMetaHandler.s"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoStreamHandler.o"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoStreamHandler.i"
+	@echo "... WebApps/GomokuServer/src/handlers/VideoStreamHandler.s"
 	@echo "... WebApps/GomokuServer/src/main.o"
 	@echo "... WebApps/GomokuServer/src/main.i"
 	@echo "... WebApps/GomokuServer/src/main.s"

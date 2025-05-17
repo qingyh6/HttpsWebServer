@@ -261,9 +261,19 @@ bool HttpContext::parseMultipartData(Buffer *buf)
     return false;
     }
     LOG_INFO<<"开始创建文件咯";
-
-    FileUtil writer("/root/uploads/" + filename);
-    writer.writeBinary(fileStart, fileEnd - fileStart);
+    if (filename.find(".avi")!= std::string::npos ||filename.find(".mp4")!= std::string::npos||filename.find(".mkv")!= std::string::npos)
+    {
+        FileUtil writer("/root/uploads/videos/" + filename);
+        writer.writeBinary(fileStart, fileEnd - fileStart);
+        LOG_INFO<<"这是一个视频"<<filename;
+    }
+    else
+    {
+        FileUtil writer("/root/uploads/" + filename);
+        writer.writeBinary(fileStart, fileEnd - fileStart);
+    }
+   
+    
 
     LOG_INFO<<"创建完成";
 

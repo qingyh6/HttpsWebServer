@@ -10,7 +10,13 @@
 #include "../include/handlers/ResourceListHandler.h"
 #include "../include/handlers/ResourceUploadHandler.h"
 #include "../include/handlers/ResourceDownloadHandler.h"
+#include "../include/handlers/ResourceDeleteHandler.h"
+
 #include "../include/handlers/BackendStatusHandler.h"
+
+#include "../include/handlers/VideoCentorHandler.h"
+#include "../include/handlers/VideoMetaHandler.h"
+#include "../include/handlers/VideoStreamHandler.h"
 
 #include "../include/GomokuServer.h"
 #include "../../../HttpServer/include/http/HttpRequest.h"
@@ -69,6 +75,10 @@ void GomokuServer::initializeMiddleware()
     // 添加中间件
     httpServer_.addMiddleware(corsMiddleware);
 
+    auto gzipMiddleware = std::make_shared<http::middleware::GzipMiddleware>();
+    // 添加中间件
+    httpServer_.addMiddleware(gzipMiddleware);
+
 
 
 }
@@ -111,8 +121,15 @@ void GomokuServer::initializeRouter()
     httpServer_.Get("/resource_centor", std::make_shared<ResourceCentorHandler>(this));
      httpServer_.Get("/resource/list", std::make_shared<ResourceListHandler>(this));
      httpServer_.Post("/resource/download", std::make_shared<ResourceDownloadHandler>(this));
+     httpServer_.Post("/resource/delete", std::make_shared<ResourceDeleteHandler>(this));
      httpServer_.Post("/upload", std::make_shared<ResourceUploadHandler>(this));
-     httpServer_.Get("/backend_status", std::make_shared<BackendStatusHandler>(this));
+    //  httpServer_.Get("/backend_status", std::make_shared<BackendStatusHandler>(this));
+    httpServer_.Get("/video_centor", std::make_shared<VideoCentorHandler>(this));
+    httpServer_.Post("/metadata", std::make_shared<VideoMetaHandler>(this));
+    httpServer_.addRoute(http::HttpRequest::kGet, R"(^/videos/([^/]+\.mp4)$)", std::make_shared<VideoStreamHandler>(this));
+
+
+    
     
 }
 
