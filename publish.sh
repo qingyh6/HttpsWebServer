@@ -9,8 +9,8 @@ version=v1.2
 echo "📦 正在提交代码，版本号：$version"
 
 git add .
-git commit -m "完成资源上传与下载功能，发布$version"
-git push origin main
+git commit -m "新增gzip压缩功能$version"
+git push webServer main
 
 echo "🏷️ 打标签 $version"
 git tag $version
