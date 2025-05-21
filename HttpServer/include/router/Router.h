@@ -87,6 +87,8 @@ private:
     void extractPathParameters(const std::smatch &match, HttpRequest &request)
     {
         // Assuming the first match is the full path, parameters start from index 1
+        //比如我请求的路径是/videos/video1.mp4,匹配的match[i]就为video1
+        //表现为{"param1":video1}
         for (size_t i = 1; i < match.size(); ++i)
         {
             request.setPathParameters("param" + std::to_string(i), match[i].str());

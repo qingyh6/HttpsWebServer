@@ -537,485 +537,485 @@ HttpServer/src/utils/db/DbConnectionPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.s
 .PHONY : HttpServer/src/utils/db/DbConnectionPool.cpp.s
 
-WebApps/GomokuServer/src/AiGame.o: WebApps/GomokuServer/src/AiGame.cpp.o
-.PHONY : WebApps/GomokuServer/src/AiGame.o
+WebApps/LiteHubServer/src/AiGame.o: WebApps/LiteHubServer/src/AiGame.cpp.o
+.PHONY : WebApps/LiteHubServer/src/AiGame.o
 
 # target to build an object file
-WebApps/GomokuServer/src/AiGame.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o
-.PHONY : WebApps/GomokuServer/src/AiGame.cpp.o
+WebApps/LiteHubServer/src/AiGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o
+.PHONY : WebApps/LiteHubServer/src/AiGame.cpp.o
 
-WebApps/GomokuServer/src/AiGame.i: WebApps/GomokuServer/src/AiGame.cpp.i
-.PHONY : WebApps/GomokuServer/src/AiGame.i
+WebApps/LiteHubServer/src/AiGame.i: WebApps/LiteHubServer/src/AiGame.cpp.i
+.PHONY : WebApps/LiteHubServer/src/AiGame.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/AiGame.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.i
-.PHONY : WebApps/GomokuServer/src/AiGame.cpp.i
+WebApps/LiteHubServer/src/AiGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.i
+.PHONY : WebApps/LiteHubServer/src/AiGame.cpp.i
 
-WebApps/GomokuServer/src/AiGame.s: WebApps/GomokuServer/src/AiGame.cpp.s
-.PHONY : WebApps/GomokuServer/src/AiGame.s
+WebApps/LiteHubServer/src/AiGame.s: WebApps/LiteHubServer/src/AiGame.cpp.s
+.PHONY : WebApps/LiteHubServer/src/AiGame.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/AiGame.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.s
-.PHONY : WebApps/GomokuServer/src/AiGame.cpp.s
+WebApps/LiteHubServer/src/AiGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.s
+.PHONY : WebApps/LiteHubServer/src/AiGame.cpp.s
 
-WebApps/GomokuServer/src/GomokuServer.o: WebApps/GomokuServer/src/GomokuServer.cpp.o
-.PHONY : WebApps/GomokuServer/src/GomokuServer.o
+WebApps/LiteHubServer/src/LiteHubServer.o: WebApps/LiteHubServer/src/LiteHubServer.cpp.o
+.PHONY : WebApps/LiteHubServer/src/LiteHubServer.o
 
 # target to build an object file
-WebApps/GomokuServer/src/GomokuServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o
-.PHONY : WebApps/GomokuServer/src/GomokuServer.cpp.o
+WebApps/LiteHubServer/src/LiteHubServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o
+.PHONY : WebApps/LiteHubServer/src/LiteHubServer.cpp.o
 
-WebApps/GomokuServer/src/GomokuServer.i: WebApps/GomokuServer/src/GomokuServer.cpp.i
-.PHONY : WebApps/GomokuServer/src/GomokuServer.i
+WebApps/LiteHubServer/src/LiteHubServer.i: WebApps/LiteHubServer/src/LiteHubServer.cpp.i
+.PHONY : WebApps/LiteHubServer/src/LiteHubServer.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/GomokuServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.i
-.PHONY : WebApps/GomokuServer/src/GomokuServer.cpp.i
+WebApps/LiteHubServer/src/LiteHubServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.i
+.PHONY : WebApps/LiteHubServer/src/LiteHubServer.cpp.i
 
-WebApps/GomokuServer/src/GomokuServer.s: WebApps/GomokuServer/src/GomokuServer.cpp.s
-.PHONY : WebApps/GomokuServer/src/GomokuServer.s
+WebApps/LiteHubServer/src/LiteHubServer.s: WebApps/LiteHubServer/src/LiteHubServer.cpp.s
+.PHONY : WebApps/LiteHubServer/src/LiteHubServer.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/GomokuServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.s
-.PHONY : WebApps/GomokuServer/src/GomokuServer.cpp.s
+WebApps/LiteHubServer/src/LiteHubServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.s
+.PHONY : WebApps/LiteHubServer/src/LiteHubServer.cpp.s
 
-WebApps/GomokuServer/src/handlers/AiGameMoveHandler.o: WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameMoveHandler.o
+WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.o: WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/AiGameMoveHandler.i: WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameMoveHandler.i
+WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.i: WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/AiGameMoveHandler.s: WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameMoveHandler.s
+WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.s: WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/AiGameStartHandler.o: WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameStartHandler.o
+WebApps/LiteHubServer/src/handlers/AiGameStartHandler.o: WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameStartHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/AiGameStartHandler.i: WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameStartHandler.i
+WebApps/LiteHubServer/src/handlers/AiGameStartHandler.i: WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameStartHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/AiGameStartHandler.s: WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameStartHandler.s
+WebApps/LiteHubServer/src/handlers/AiGameStartHandler.s: WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameStartHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/BackendStatusHandler.o: WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/BackendStatusHandler.o
+WebApps/LiteHubServer/src/handlers/BackendStatusHandler.o: WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/BackendStatusHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/BackendStatusHandler.i: WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/BackendStatusHandler.i
+WebApps/LiteHubServer/src/handlers/BackendStatusHandler.i: WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/BackendStatusHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/BackendStatusHandler.s: WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/BackendStatusHandler.s
+WebApps/LiteHubServer/src/handlers/BackendStatusHandler.s: WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/BackendStatusHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/EntryHandler.o: WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/EntryHandler.o
+WebApps/LiteHubServer/src/handlers/EntryHandler.o: WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/EntryHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/EntryHandler.i: WebApps/GomokuServer/src/handlers/EntryHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/EntryHandler.i
+WebApps/LiteHubServer/src/handlers/EntryHandler.i: WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/EntryHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/EntryHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/EntryHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/EntryHandler.s: WebApps/GomokuServer/src/handlers/EntryHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/EntryHandler.s
+WebApps/LiteHubServer/src/handlers/EntryHandler.s: WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/EntryHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/EntryHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/EntryHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/GameBackendHandler.o: WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/GameBackendHandler.o
+WebApps/LiteHubServer/src/handlers/GameBackendHandler.o: WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/GameBackendHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/GameBackendHandler.i: WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/GameBackendHandler.i
+WebApps/LiteHubServer/src/handlers/GameBackendHandler.i: WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/GameBackendHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/GameBackendHandler.s: WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/GameBackendHandler.s
+WebApps/LiteHubServer/src/handlers/GameBackendHandler.s: WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/GameBackendHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/LoginHandler.o: WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/LoginHandler.o
+WebApps/LiteHubServer/src/handlers/LoginHandler.o: WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/LoginHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/LoginHandler.i: WebApps/GomokuServer/src/handlers/LoginHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/LoginHandler.i
+WebApps/LiteHubServer/src/handlers/LoginHandler.i: WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/LoginHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/LoginHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/LoginHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/LoginHandler.s: WebApps/GomokuServer/src/handlers/LoginHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/LoginHandler.s
+WebApps/LiteHubServer/src/handlers/LoginHandler.s: WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/LoginHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/LoginHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/LoginHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/Loginout.o: WebApps/GomokuServer/src/handlers/Loginout.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/Loginout.o
+WebApps/LiteHubServer/src/handlers/LogoutHandler.o: WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/LogoutHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/Loginout.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/Loginout.cpp.o
+WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/Loginout.i: WebApps/GomokuServer/src/handlers/Loginout.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/Loginout.i
+WebApps/LiteHubServer/src/handlers/LogoutHandler.i: WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/LogoutHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/Loginout.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/Loginout.cpp.i
+WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/Loginout.s: WebApps/GomokuServer/src/handlers/Loginout.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/Loginout.s
+WebApps/LiteHubServer/src/handlers/LogoutHandler.s: WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/LogoutHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/Loginout.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/Loginout.cpp.s
+WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/MenuHandler.o: WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/MenuHandler.o
+WebApps/LiteHubServer/src/handlers/MenuHandler.o: WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/MenuHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/MenuHandler.i: WebApps/GomokuServer/src/handlers/MenuHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/MenuHandler.i
+WebApps/LiteHubServer/src/handlers/MenuHandler.i: WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/MenuHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/MenuHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/MenuHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/MenuHandler.s: WebApps/GomokuServer/src/handlers/MenuHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/MenuHandler.s
+WebApps/LiteHubServer/src/handlers/MenuHandler.s: WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/MenuHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/MenuHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/MenuHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/RegisterHandler.o: WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/RegisterHandler.o
+WebApps/LiteHubServer/src/handlers/RegisterHandler.o: WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/RegisterHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/RegisterHandler.i: WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/RegisterHandler.i
+WebApps/LiteHubServer/src/handlers/RegisterHandler.i: WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/RegisterHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/RegisterHandler.s: WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/RegisterHandler.s
+WebApps/LiteHubServer/src/handlers/RegisterHandler.s: WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/RegisterHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/ResourceCentorHandler.o: WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceCentorHandler.o
+WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.o: WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/ResourceCentorHandler.i: WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceCentorHandler.i
+WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.i: WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/ResourceCentorHandler.s: WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceCentorHandler.s
+WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.s: WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.o: WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.o
+WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.o: WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.i: WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.i
+WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.i: WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.s: WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.s
+WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.s: WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.o: WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.o
+WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.o: WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.i: WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.i
+WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.i: WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.s: WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.s
+WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.s: WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/ResourceListHandler.o: WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceListHandler.o
+WebApps/LiteHubServer/src/handlers/ResourceListHandler.o: WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceListHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/ResourceListHandler.i: WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceListHandler.i
+WebApps/LiteHubServer/src/handlers/ResourceListHandler.i: WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceListHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/ResourceListHandler.s: WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceListHandler.s
+WebApps/LiteHubServer/src/handlers/ResourceListHandler.s: WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceListHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.o: WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.o
+WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.o: WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.i: WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.i
+WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.i: WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.s: WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.s
+WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.s: WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/VideoCentorHandler.o: WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.o
+WebApps/LiteHubServer/src/handlers/VideoCentorHandler.o: WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoCentorHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/VideoCentorHandler.i: WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.i
+WebApps/LiteHubServer/src/handlers/VideoCentorHandler.i: WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoCentorHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/VideoCentorHandler.s: WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.s
+WebApps/LiteHubServer/src/handlers/VideoCentorHandler.s: WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoCentorHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/VideoMetaHandler.o: WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.o
+WebApps/LiteHubServer/src/handlers/VideoMetaHandler.o: WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoMetaHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/VideoMetaHandler.i: WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.i
+WebApps/LiteHubServer/src/handlers/VideoMetaHandler.i: WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoMetaHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/VideoMetaHandler.s: WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.s
+WebApps/LiteHubServer/src/handlers/VideoMetaHandler.s: WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoMetaHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.s
 
-WebApps/GomokuServer/src/handlers/VideoStreamHandler.o: WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.o
+WebApps/LiteHubServer/src/handlers/VideoStreamHandler.o: WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoStreamHandler.o
 
 # target to build an object file
-WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o
-.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o
+WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o
 
-WebApps/GomokuServer/src/handlers/VideoStreamHandler.i: WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.i
+WebApps/LiteHubServer/src/handlers/VideoStreamHandler.i: WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoStreamHandler.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i
-.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i
+WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.i
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.i
 
-WebApps/GomokuServer/src/handlers/VideoStreamHandler.s: WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.s
+WebApps/LiteHubServer/src/handlers/VideoStreamHandler.s: WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoStreamHandler.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s
-.PHONY : WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s
+WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.s
+.PHONY : WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.s
 
-WebApps/GomokuServer/src/main.o: WebApps/GomokuServer/src/main.cpp.o
-.PHONY : WebApps/GomokuServer/src/main.o
+WebApps/LiteHubServer/src/main.o: WebApps/LiteHubServer/src/main.cpp.o
+.PHONY : WebApps/LiteHubServer/src/main.o
 
 # target to build an object file
-WebApps/GomokuServer/src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o
-.PHONY : WebApps/GomokuServer/src/main.cpp.o
+WebApps/LiteHubServer/src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o
+.PHONY : WebApps/LiteHubServer/src/main.cpp.o
 
-WebApps/GomokuServer/src/main.i: WebApps/GomokuServer/src/main.cpp.i
-.PHONY : WebApps/GomokuServer/src/main.i
+WebApps/LiteHubServer/src/main.i: WebApps/LiteHubServer/src/main.cpp.i
+.PHONY : WebApps/LiteHubServer/src/main.i
 
 # target to preprocess a source file
-WebApps/GomokuServer/src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.i
-.PHONY : WebApps/GomokuServer/src/main.cpp.i
+WebApps/LiteHubServer/src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.i
+.PHONY : WebApps/LiteHubServer/src/main.cpp.i
 
-WebApps/GomokuServer/src/main.s: WebApps/GomokuServer/src/main.cpp.s
-.PHONY : WebApps/GomokuServer/src/main.s
+WebApps/LiteHubServer/src/main.s: WebApps/LiteHubServer/src/main.cpp.s
+.PHONY : WebApps/LiteHubServer/src/main.s
 
 # target to generate assembly for a file
-WebApps/GomokuServer/src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.s
-.PHONY : WebApps/GomokuServer/src/main.cpp.s
+WebApps/LiteHubServer/src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.s
+.PHONY : WebApps/LiteHubServer/src/main.cpp.s
 
 # Help Target
 help:
@@ -1077,66 +1077,66 @@ help:
 	@echo "... HttpServer/src/utils/db/DbConnectionPool.o"
 	@echo "... HttpServer/src/utils/db/DbConnectionPool.i"
 	@echo "... HttpServer/src/utils/db/DbConnectionPool.s"
-	@echo "... WebApps/GomokuServer/src/AiGame.o"
-	@echo "... WebApps/GomokuServer/src/AiGame.i"
-	@echo "... WebApps/GomokuServer/src/AiGame.s"
-	@echo "... WebApps/GomokuServer/src/GomokuServer.o"
-	@echo "... WebApps/GomokuServer/src/GomokuServer.i"
-	@echo "... WebApps/GomokuServer/src/GomokuServer.s"
-	@echo "... WebApps/GomokuServer/src/handlers/AiGameMoveHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/AiGameMoveHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/AiGameMoveHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/AiGameStartHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/AiGameStartHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/AiGameStartHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/BackendStatusHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/BackendStatusHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/BackendStatusHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/EntryHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/EntryHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/EntryHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/GameBackendHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/GameBackendHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/GameBackendHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/LoginHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/LoginHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/LoginHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/Loginout.o"
-	@echo "... WebApps/GomokuServer/src/handlers/Loginout.i"
-	@echo "... WebApps/GomokuServer/src/handlers/Loginout.s"
-	@echo "... WebApps/GomokuServer/src/handlers/MenuHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/MenuHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/MenuHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/RegisterHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/RegisterHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/RegisterHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceCentorHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceCentorHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceCentorHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceListHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceListHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceListHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoCentorHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoCentorHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoCentorHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoMetaHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoMetaHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoMetaHandler.s"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoStreamHandler.o"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoStreamHandler.i"
-	@echo "... WebApps/GomokuServer/src/handlers/VideoStreamHandler.s"
-	@echo "... WebApps/GomokuServer/src/main.o"
-	@echo "... WebApps/GomokuServer/src/main.i"
-	@echo "... WebApps/GomokuServer/src/main.s"
+	@echo "... WebApps/LiteHubServer/src/AiGame.o"
+	@echo "... WebApps/LiteHubServer/src/AiGame.i"
+	@echo "... WebApps/LiteHubServer/src/AiGame.s"
+	@echo "... WebApps/LiteHubServer/src/LiteHubServer.o"
+	@echo "... WebApps/LiteHubServer/src/LiteHubServer.i"
+	@echo "... WebApps/LiteHubServer/src/LiteHubServer.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/AiGameStartHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/AiGameStartHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/AiGameStartHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/BackendStatusHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/BackendStatusHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/BackendStatusHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/EntryHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/EntryHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/EntryHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/GameBackendHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/GameBackendHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/GameBackendHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/LoginHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/LoginHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/LoginHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/LogoutHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/LogoutHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/LogoutHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/MenuHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/MenuHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/MenuHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/RegisterHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/RegisterHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/RegisterHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceListHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceListHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceListHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoCentorHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoCentorHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoCentorHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoMetaHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoMetaHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoMetaHandler.s"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoStreamHandler.o"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoStreamHandler.i"
+	@echo "... WebApps/LiteHubServer/src/handlers/VideoStreamHandler.s"
+	@echo "... WebApps/LiteHubServer/src/main.o"
+	@echo "... WebApps/LiteHubServer/src/main.i"
+	@echo "... WebApps/LiteHubServer/src/main.s"
 .PHONY : help
 
 

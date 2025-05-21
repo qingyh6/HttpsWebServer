@@ -260,7 +260,9 @@ bool HttpContext::parseMultipartData(Buffer *buf)
     // 未找到结束 boundary，暂时数据不足
     return false;
     }
-    LOG_INFO<<"开始创建文件咯";
+    LOG_INFO<<"开始创建文件咯"; 
+    request_.set_filename(filename);
+
     if (filename.find(".avi")!= std::string::npos ||filename.find(".mp4")!= std::string::npos||filename.find(".mkv")!= std::string::npos)
     {
         FileUtil writer("/root/uploads/videos/" + filename);

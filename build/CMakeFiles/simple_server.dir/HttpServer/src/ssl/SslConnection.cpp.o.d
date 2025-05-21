@@ -209,7 +209,7 @@ CMakeFiles/simple_server.dir/HttpServer/src/ssl/SslConnection.cpp.o: \
  /usr/include/muduo/base/StringPiece.h /usr/include/muduo/base/Types.h \
  /usr/include/assert.h /usr/include/muduo/net/Callbacks.h \
  /usr/include/muduo/base/Timestamp.h /usr/include/muduo/base/copyable.h \
- /usr/local/include/boost/operators.hpp /usr/include/c++/11/cstddef \
+ /usr/local/boost/include/boost/operators.hpp /usr/include/c++/11/cstddef \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/bits/streambuf_iterator.h \
  /usr/include/c++/11/streambuf /usr/include/c++/11/bits/ios_base.h \
@@ -218,12 +218,12 @@ CMakeFiles/simple_server.dir/HttpServer/src/ssl/SslConnection.cpp.o: \
  /usr/include/c++/11/system_error \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/streambuf.tcc \
- /usr/local/include/boost/config.hpp \
- /usr/local/include/boost/config/user.hpp \
- /usr/local/include/boost/config/detail/select_compiler_config.hpp \
- /usr/local/include/boost/config/compiler/gcc.hpp \
- /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
- /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
+ /usr/local/boost/include/boost/config.hpp \
+ /usr/local/boost/include/boost/config/user.hpp \
+ /usr/local/boost/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/local/boost/include/boost/config/compiler/gcc.hpp \
+ /usr/local/boost/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/local/boost/include/boost/config/stdlib/libstdcpp3.hpp \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -231,14 +231,14 @@ CMakeFiles/simple_server.dir/HttpServer/src/ssl/SslConnection.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /usr/local/include/boost/config/detail/select_platform_config.hpp \
- /usr/local/include/boost/config/platform/linux.hpp \
- /usr/local/include/boost/config/detail/posix_features.hpp \
- /usr/local/include/boost/config/detail/suffix.hpp \
- /usr/local/include/boost/config/helper_macros.hpp \
- /usr/local/include/boost/detail/workaround.hpp \
- /usr/local/include/boost/config/workaround.hpp \
- /usr/local/include/boost/core/addressof.hpp \
+ /usr/local/boost/include/boost/config/detail/select_platform_config.hpp \
+ /usr/local/boost/include/boost/config/platform/linux.hpp \
+ /usr/local/boost/include/boost/config/detail/posix_features.hpp \
+ /usr/local/boost/include/boost/config/detail/suffix.hpp \
+ /usr/local/boost/include/boost/config/helper_macros.hpp \
+ /usr/local/boost/include/boost/detail/workaround.hpp \
+ /usr/local/boost/include/boost/config/workaround.hpp \
+ /usr/local/boost/include/boost/core/addressof.hpp \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
@@ -269,38 +269,41 @@ CMakeFiles/simple_server.dir/HttpServer/src/ssl/SslConnection.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/in.h /usr/local/include/boost/any.hpp \
- /usr/local/include/boost/type_index.hpp \
- /usr/local/include/boost/type_index/stl_type_index.hpp \
- /usr/local/include/boost/type_index/type_index_facade.hpp \
- /usr/local/include/boost/container_hash/hash_fwd.hpp \
- /usr/include/c++/11/cstring /usr/local/include/boost/static_assert.hpp \
- /usr/local/include/boost/throw_exception.hpp \
- /usr/local/include/boost/exception/exception.hpp \
- /usr/local/include/boost/current_function.hpp \
- /usr/local/include/boost/core/demangle.hpp /usr/include/c++/11/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h \
+ /usr/local/boost/include/boost/any.hpp \
+ /usr/local/boost/include/boost/type_index.hpp \
+ /usr/local/boost/include/boost/type_index/stl_type_index.hpp \
+ /usr/local/boost/include/boost/type_index/type_index_facade.hpp \
+ /usr/local/boost/include/boost/container_hash/hash_fwd.hpp \
+ /usr/include/c++/11/cstring \
+ /usr/local/boost/include/boost/static_assert.hpp \
+ /usr/local/boost/include/boost/throw_exception.hpp \
+ /usr/local/boost/include/boost/exception/exception.hpp \
+ /usr/local/boost/include/boost/current_function.hpp \
+ /usr/local/boost/include/boost/core/demangle.hpp \
+ /usr/include/c++/11/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /usr/local/include/boost/type_traits/conditional.hpp \
- /usr/local/include/boost/type_traits/is_const.hpp \
- /usr/local/include/boost/type_traits/integral_constant.hpp \
- /usr/local/include/boost/type_traits/is_reference.hpp \
- /usr/local/include/boost/type_traits/is_lvalue_reference.hpp \
- /usr/local/include/boost/type_traits/is_rvalue_reference.hpp \
- /usr/local/include/boost/type_traits/is_volatile.hpp \
- /usr/local/include/boost/type_traits/remove_cv.hpp \
- /usr/local/include/boost/type_traits/remove_reference.hpp \
- /usr/local/include/boost/type_traits/decay.hpp \
- /usr/local/include/boost/type_traits/is_array.hpp \
- /usr/local/include/boost/type_traits/is_function.hpp \
- /usr/local/include/boost/type_traits/detail/config.hpp \
- /usr/local/include/boost/version.hpp \
- /usr/local/include/boost/type_traits/detail/is_function_cxx_11.hpp \
- /usr/local/include/boost/type_traits/remove_bounds.hpp \
- /usr/local/include/boost/type_traits/remove_extent.hpp \
- /usr/local/include/boost/type_traits/add_pointer.hpp \
- /usr/local/include/boost/type_traits/add_reference.hpp \
- /usr/local/include/boost/utility/enable_if.hpp \
- /usr/local/include/boost/core/enable_if.hpp \
- /usr/local/include/boost/type_traits/is_same.hpp \
+ /usr/local/boost/include/boost/type_traits/conditional.hpp \
+ /usr/local/boost/include/boost/type_traits/is_const.hpp \
+ /usr/local/boost/include/boost/type_traits/integral_constant.hpp \
+ /usr/local/boost/include/boost/type_traits/is_reference.hpp \
+ /usr/local/boost/include/boost/type_traits/is_lvalue_reference.hpp \
+ /usr/local/boost/include/boost/type_traits/is_rvalue_reference.hpp \
+ /usr/local/boost/include/boost/type_traits/is_volatile.hpp \
+ /usr/local/boost/include/boost/type_traits/remove_cv.hpp \
+ /usr/local/boost/include/boost/type_traits/remove_reference.hpp \
+ /usr/local/boost/include/boost/type_traits/decay.hpp \
+ /usr/local/boost/include/boost/type_traits/is_array.hpp \
+ /usr/local/boost/include/boost/type_traits/is_function.hpp \
+ /usr/local/boost/include/boost/type_traits/detail/config.hpp \
+ /usr/local/boost/include/boost/version.hpp \
+ /usr/local/boost/include/boost/type_traits/detail/is_function_cxx_11.hpp \
+ /usr/local/boost/include/boost/type_traits/remove_bounds.hpp \
+ /usr/local/boost/include/boost/type_traits/remove_extent.hpp \
+ /usr/local/boost/include/boost/type_traits/add_pointer.hpp \
+ /usr/local/boost/include/boost/type_traits/add_reference.hpp \
+ /usr/local/boost/include/boost/utility/enable_if.hpp \
+ /usr/local/boost/include/boost/core/enable_if.hpp \
+ /usr/local/boost/include/boost/type_traits/is_same.hpp \
  /usr/include/muduo/base/Logging.h /usr/include/muduo/base/LogStream.h \
  /usr/include/openssl/err.h

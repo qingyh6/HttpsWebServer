@@ -1,8 +1,8 @@
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o: \
- /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp \
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadrHandler.cpp.o: \
+ /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceUploadrHandler.cpp \
  /usr/include/stdc-predef.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/ResourceUploadHandler.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/router/RouterHandler.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/ResourceUploadHandler.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/router/RouterHandler.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -154,7 +154,7 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/router/../http/HttpRequest.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/router/../http/HttpRequest.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
@@ -197,7 +197,7 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/local/boost/include/boost/detail/workaround.hpp \
  /usr/local/boost/include/boost/config/workaround.hpp \
  /usr/local/boost/include/boost/core/addressof.hpp \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/router/../http/HttpResponse.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/router/../http/HttpResponse.h \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
  /usr/include/muduo/base/noncopyable.h \
  /usr/include/muduo/net/TcpConnection.h \
@@ -265,14 +265,14 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/local/boost/include/boost/utility/enable_if.hpp \
  /usr/local/boost/include/boost/core/enable_if.hpp \
  /usr/local/boost/include/boost/type_traits/is_same.hpp \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../GomokuServer.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../LiteHubServer.h \
  /usr/include/c++/11/atomic /usr/include/c++/11/mutex \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/limits /usr/include/c++/11/ctime \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../AiGame.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../AiGame.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
  /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
@@ -283,7 +283,7 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/HttpServer.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/HttpServer.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -296,8 +296,8 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/include/muduo/net/EventLoop.h /usr/include/muduo/base/Mutex.h \
  /usr/include/muduo/base/CurrentThread.h /usr/include/muduo/net/TimerId.h \
  /usr/include/muduo/base/Logging.h /usr/include/muduo/base/LogStream.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/HttpContext.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../router/Router.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/HttpContext.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../router/Router.h \
  /usr/include/c++/11/regex /usr/include/c++/11/bitset \
  /usr/include/c++/11/locale \
  /usr/include/c++/11/bits/locale_facets_nonio.h \
@@ -320,9 +320,9 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
  /usr/include/c++/11/bits/regex_executor.h \
  /usr/include/c++/11/bits/regex_executor.tcc \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../session/SessionManager.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../session/SessionStorage.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../session/Session.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../session/SessionManager.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../session/SessionStorage.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../session/Session.h \
  /usr/include/c++/11/random /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -350,16 +350,16 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/MiddlewareChain.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/Middleware.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/cors/CorsMiddleware.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/cors/CorsConfig.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/limit/LimitMiddleware.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/gzip/GzipMiddleware.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslConnection.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslContext.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslConfig.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslTypes.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/MiddlewareChain.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/Middleware.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/cors/CorsMiddleware.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/cors/CorsConfig.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/limit/LimitMiddleware.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../middleware/gzip/GzipMiddleware.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslConnection.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslContext.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslConfig.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/http/../ssl/SslTypes.h \
  /usr/include/openssl/ssl.h /usr/include/openssl/macros.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
@@ -404,13 +404,13 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/include/openssl/prov_ssl.h /usr/include/openssl/ssl2.h \
  /usr/include/openssl/ssl3.h /usr/include/openssl/tls1.h \
  /usr/include/openssl/dtls1.h /usr/include/openssl/srtp.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/utils/MysqlUtil.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/utils/db/DbConnectionPool.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/utils/MysqlUtil.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/utils/db/DbConnectionPool.h \
  /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
  /usr/include/c++/11/condition_variable /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/std_thread.h \
  /usr/include/c++/11/bits/this_thread_sleep.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/utils/db/DbConnection.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/utils/db/DbConnection.h \
  /usr/include/cppconn/connection.h /usr/include/cppconn/build_config.h \
  /usr/include/cppconn/warning.h /usr/include/cppconn/sqlstring.h \
  /usr/include/cppconn/variant.h /usr/include/c++/11/list \
@@ -440,13 +440,13 @@ CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHa
  /usr/include/mysql/typelib.h /usr/include/mysql/my_alloc.h \
  /usr/include/mysql/mysql/psi/psi_memory.h \
  /usr/include/mysql/mysql/psi/psi_base.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/utils/db/DbException.h \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/utils/FileUtil.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/utils/db/DbException.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/utils/FileUtil.h \
  /usr/include/c++/11/fstream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc \
- /root/HttpsServer/WebApps/GomokuServer/include/../include/handlers/../../../../HttpServer/include/utils/JsonUtil.h \
+ /root/HttpsServer/WebApps/LiteHubServer/include/../include/handlers/../../../../HttpServer/include/utils/JsonUtil.h \
  /usr/include/nlohmann/json.hpp /usr/include/nlohmann/adl_serializer.hpp \
  /usr/include/nlohmann/detail/conversions/from_json.hpp \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \

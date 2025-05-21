@@ -69,19 +69,19 @@ include CMakeFiles/simple_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/simple_server.dir/flags.make
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: ../WebApps/GomokuServer/src/main.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/main.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o: ../WebApps/LiteHubServer/src/main.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/main.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/main.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/main.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/main.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/main.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.s
 
 CMakeFiles/simple_server.dir/HttpServer/src/http/HttpContext.cpp.o: CMakeFiles/simple_server.dir/flags.make
 CMakeFiles/simple_server.dir/HttpServer/src/http/HttpContext.cpp.o: ../HttpServer/src/http/HttpContext.cpp
@@ -321,275 +321,275 @@ CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/HttpServer/src/utils/db/DbConnectionPool.cpp -o CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o: ../WebApps/GomokuServer/src/AiGame.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/AiGame.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o: ../WebApps/LiteHubServer/src/AiGame.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/AiGame.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/AiGame.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/AiGame.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/AiGame.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/AiGame.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o: ../WebApps/GomokuServer/src/GomokuServer.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/GomokuServer.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o: ../WebApps/LiteHubServer/src/LiteHubServer.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/LiteHubServer.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/GomokuServer.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/LiteHubServer.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/GomokuServer.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/LiteHubServer.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/EntryHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/EntryHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/EntryHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/EntryHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/EntryHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/LoginHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/LoginHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/LoginHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/LoginHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/LoginHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o: ../WebApps/GomokuServer/src/handlers/Loginout.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/Loginout.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/Loginout.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/Loginout.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/MenuHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/MenuHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/MenuHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/MenuHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/MenuHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/RegisterHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.s
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o: ../WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o -c /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o: CMakeFiles/simple_server.dir/flags.make
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o: ../WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o: CMakeFiles/simple_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o -MF CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o.d -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o -c /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp > CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.i
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp > CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.i
 
-CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.s
+CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/HttpsServer/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp -o CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.s
 
 # Object files for target simple_server
 simple_server_OBJECTS = \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o" \
 "CMakeFiles/simple_server.dir/HttpServer/src/http/HttpContext.cpp.o" \
 "CMakeFiles/simple_server.dir/HttpServer/src/http/HttpRequest.cpp.o" \
 "CMakeFiles/simple_server.dir/HttpServer/src/http/HttpResponse.cpp.o" \
@@ -607,30 +607,30 @@ simple_server_OBJECTS = \
 "CMakeFiles/simple_server.dir/HttpServer/src/ssl/SslContext.cpp.o" \
 "CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnection.cpp.o" \
 "CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o" \
-"CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o"
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o" \
+"CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o"
 
 # External object files for target simple_server
 simple_server_EXTERNAL_OBJECTS =
 
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/main.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/main.cpp.o
 simple_server: CMakeFiles/simple_server.dir/HttpServer/src/http/HttpContext.cpp.o
 simple_server: CMakeFiles/simple_server.dir/HttpServer/src/http/HttpRequest.cpp.o
 simple_server: CMakeFiles/simple_server.dir/HttpServer/src/http/HttpResponse.cpp.o
@@ -648,25 +648,25 @@ simple_server: CMakeFiles/simple_server.dir/HttpServer/src/ssl/SslConnection.cpp
 simple_server: CMakeFiles/simple_server.dir/HttpServer/src/ssl/SslContext.cpp.o
 simple_server: CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnection.cpp.o
 simple_server: CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/AiGame.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/GomokuServer.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameMoveHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/AiGameStartHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/BackendStatusHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/EntryHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/GameBackendHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/LoginHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/Loginout.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/MenuHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/RegisterHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceCentorHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDeleteHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceDownloadrHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceListHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/ResourceUploadrHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoCentorHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoMetaHandler.cpp.o
-simple_server: CMakeFiles/simple_server.dir/WebApps/GomokuServer/src/handlers/VideoStreamHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/AiGame.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/LiteHubServer.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameMoveHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/AiGameStartHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/BackendStatusHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/EntryHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/GameBackendHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LoginHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/LogoutHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/MenuHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/RegisterHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceCentorHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDeleteHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceDownloadHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceListHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/ResourceUploadHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoCentorHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoMetaHandler.cpp.o
+simple_server: CMakeFiles/simple_server.dir/WebApps/LiteHubServer/src/handlers/VideoStreamHandler.cpp.o
 simple_server: CMakeFiles/simple_server.dir/build.make
 simple_server: CMakeFiles/simple_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/HttpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Linking CXX executable simple_server"

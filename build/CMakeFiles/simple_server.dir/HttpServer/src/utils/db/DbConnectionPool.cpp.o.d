@@ -206,15 +206,16 @@ CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.o: \
  /usr/include/inttypes.h /usr/include/cppconn/resultset.h \
  /usr/include/cppconn/resultset_metadata.h \
  /usr/include/cppconn/datatype.h /usr/include/cppconn/resultset.h \
- /usr/include/mysql_driver.h /usr/local/include/boost/scoped_ptr.hpp \
- /usr/local/include/boost/smart_ptr/scoped_ptr.hpp \
- /usr/local/include/boost/config.hpp \
- /usr/local/include/boost/config/user.hpp \
- /usr/local/include/boost/config/detail/select_compiler_config.hpp \
- /usr/local/include/boost/config/compiler/gcc.hpp \
+ /usr/include/mysql_driver.h \
+ /usr/local/boost/include/boost/scoped_ptr.hpp \
+ /usr/local/boost/include/boost/smart_ptr/scoped_ptr.hpp \
+ /usr/local/boost/include/boost/config.hpp \
+ /usr/local/boost/include/boost/config/user.hpp \
+ /usr/local/boost/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/local/boost/include/boost/config/compiler/gcc.hpp \
  /usr/include/c++/11/cstddef \
- /usr/local/include/boost/config/detail/select_stdlib_config.hpp \
- /usr/local/include/boost/config/stdlib/libstdcpp3.hpp \
+ /usr/local/boost/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/local/boost/include/boost/config/stdlib/libstdcpp3.hpp \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -222,20 +223,20 @@ CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /usr/local/include/boost/config/detail/select_platform_config.hpp \
- /usr/local/include/boost/config/platform/linux.hpp \
- /usr/local/include/boost/config/detail/posix_features.hpp \
- /usr/local/include/boost/config/detail/suffix.hpp \
- /usr/local/include/boost/config/helper_macros.hpp \
- /usr/local/include/boost/assert.hpp /usr/include/assert.h \
- /usr/local/include/boost/checked_delete.hpp \
- /usr/local/include/boost/core/checked_delete.hpp \
- /usr/local/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
- /usr/local/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
- /usr/local/include/boost/smart_ptr/detail/sp_noexcept.hpp \
- /usr/local/include/boost/detail/workaround.hpp \
- /usr/local/include/boost/config/workaround.hpp \
- /usr/local/include/boost/smart_ptr/detail/operator_bool.hpp \
+ /usr/local/boost/include/boost/config/detail/select_platform_config.hpp \
+ /usr/local/boost/include/boost/config/platform/linux.hpp \
+ /usr/local/boost/include/boost/config/detail/posix_features.hpp \
+ /usr/local/boost/include/boost/config/detail/suffix.hpp \
+ /usr/local/boost/include/boost/config/helper_macros.hpp \
+ /usr/local/boost/include/boost/assert.hpp /usr/include/assert.h \
+ /usr/local/boost/include/boost/checked_delete.hpp \
+ /usr/local/boost/include/boost/core/checked_delete.hpp \
+ /usr/local/boost/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
+ /usr/local/boost/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
+ /usr/local/boost/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+ /usr/local/boost/include/boost/detail/workaround.hpp \
+ /usr/local/boost/include/boost/config/workaround.hpp \
+ /usr/local/boost/include/boost/smart_ptr/detail/operator_bool.hpp \
  /usr/include/cppconn/driver.h /usr/include/cppconn/connection.h \
  /usr/include/mysql/mysql.h /usr/include/mysql/mysql_version.h \
  /usr/include/mysql/mysql_com.h /usr/include/mysql/binary_log_types.h \
@@ -251,7 +252,7 @@ CMakeFiles/simple_server.dir/HttpServer/src/utils/db/DbConnectionPool.cpp.o: \
  /usr/include/muduo/base/StringPiece.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/muduo/base/Types.h \
  /usr/include/muduo/base/Timestamp.h /usr/include/muduo/base/copyable.h \
- /usr/local/include/boost/operators.hpp /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h \
- /usr/local/include/boost/core/addressof.hpp \
+ /usr/local/boost/include/boost/operators.hpp \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/local/boost/include/boost/core/addressof.hpp \
  /root/HttpsServer/HttpServer/src/utils/db/../../../include/utils/db/DbException.h

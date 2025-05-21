@@ -80,6 +80,8 @@ public:
         multipart_form_data_status=flag;
     }
     bool get_parseMultipartData_state() const {return multipart_form_data_status ;}
+    void set_filename(std::string filename) {filename_=filename;}
+    std::string get_filename() const{return filename_;}
 
 private:
     Method                                       method_; // 请求方法
@@ -92,6 +94,7 @@ private:
     std::string                                  content_; // 请求体
     uint64_t                                     contentLength_ { 0 }; // 请求体长度
     bool                                         multipart_form_data_status;
+    std::string                                  filename_;                                        
 };  
 
 } // namespace http

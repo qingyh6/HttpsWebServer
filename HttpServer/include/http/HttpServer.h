@@ -119,6 +119,7 @@ public:
 
     void setSslConfig(const ssl::SslConfig& config);
 
+
 private:
     void initialize();
 
@@ -142,6 +143,6 @@ private:
     bool                                         useSSL_; // 是否使用 SSL   
     // TcpConnectionPtr -> SslConnectionPtr 
     std::map<muduo::net::TcpConnectionPtr, std::unique_ptr<ssl::SslConnection>> sslConns_;
-}; 
 
+}; 
 } // namespace http

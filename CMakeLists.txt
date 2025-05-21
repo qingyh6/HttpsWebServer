@@ -13,9 +13,10 @@ include_directories(
     ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/HttpServer/include
-    ${PROJECT_SOURCE_DIR}/WebApps/GomokuServer/include
+    ${PROJECT_SOURCE_DIR}/WebApps/LiteHubServer/include
     /usr/include/mysql-cppconn-8
     /usr/include/mysql
+    # /usr/include/jwt-cpp
     ${OPENSSL_INCLUDE_DIR}
 )
 
@@ -30,22 +31,22 @@ file(GLOB_RECURSE HTTP_SERVER_SRC
     "${PROJECT_SOURCE_DIR}/HttpServer/src/*.cpp"
 )
 
-file(GLOB_RECURSE GOMOKU_SERVER_SRC
-    "${PROJECT_SOURCE_DIR}/WebApps/GomokuServer/src/*.cpp"
+file(GLOB_RECURSE LiteHub_SERVER_SRC
+    "${PROJECT_SOURCE_DIR}/WebApps/LiteHubServer/src/*.cpp"
 )
 
 # 添加主程序文件
-set(MAIN_SRC "${PROJECT_SOURCE_DIR}/WebApps/GomokuServer/src/main.cpp")
+set(MAIN_SRC "${PROJECT_SOURCE_DIR}/WebApps/LiteHubServer/src/main.cpp")
 
 # 如果主程序文件不存在，创建一个
 if(NOT EXISTS ${MAIN_SRC})
     file(WRITE ${MAIN_SRC}
-"#include \"../include/GomokuServer.h\"
+"#include \"../include/LiteHubServer.h\"
 #include <iostream>
 
 int main(int argc, char* argv[]) {
     try {
-        GomokuServer server;
+        LiteHubServer server;
         server.start();
         return 0;
     } catch (const std::exception& e) {
@@ -60,7 +61,7 @@ endif()
 add_executable(simple_server
     ${MAIN_SRC}
     ${HTTP_SERVER_SRC}
-    ${GOMOKU_SERVER_SRC}
+    ${LiteHub_SERVER_SRC}
 )
 
 
@@ -74,7 +75,10 @@ target_link_libraries(simple_server
     ssl
     crypto
     z  #添加 zlib 链接
+    # jwt-cpp
 )
+
+
 
 # 打印调试信息
 message(STATUS "Include directories:")
@@ -85,4 +89,4 @@ endforeach()
 
 message(STATUS "Main source file: ${MAIN_SRC}")
 message(STATUS "HTTP Server sources: ${HTTP_SERVER_SRC}")
-message(STATUS "Gomoku Server sources: ${GOMOKU_SERVER_SRC}")
+message(STATUS "LiteHub Server sources: ${LiteHub_SERVER_SRC}")
