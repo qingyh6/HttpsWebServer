@@ -35,9 +35,9 @@ bool SslContext::initialize()
     }
 
     // 设置 SSL 选项
-    long options = SSL_OP_NO_SSLv2 | SSL_OP_NO_SSLv3 | 
-                  SSL_OP_NO_COMPRESSION |
-                  SSL_OP_CIPHER_SERVER_PREFERENCE;
+    long options = SSL_OP_NO_SSLv2 | SSL_OP_NO_SSLv3 |  //禁用 SSLv2 协议和SSLv3 协议
+                  SSL_OP_NO_COMPRESSION |               //禁用 TLS 压缩
+                  SSL_OP_CIPHER_SERVER_PREFERENCE;      //服务器优先选择密码套件
     SSL_CTX_set_options(ctx_, options);
 
     // 加载证书和私钥
@@ -120,6 +120,7 @@ bool SslContext::setupProtocol()
     SSL_CTX_set_options(ctx_, options);
     
     // 设置加密套件
+    //比如说包括密钥交换算法、身份验证算法、对称加密算法、 消息认证码算法
     if (!config_.getCipherList().empty())
     {
         if (SSL_CTX_set_cipher_list(ctx_,

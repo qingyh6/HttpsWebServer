@@ -25,7 +25,7 @@ void ResourceDeleteHandler::handle(const http::HttpRequest &req, http::HttpRespo
         }
 
 
-        std::string currentUser=trim(session->getValue("username"));
+        std::string currentUser=formatUtil_.trim(session->getValue("username"));
 
          // 解析body(json格式)
         json parsed = json::parse(req.getBody());
@@ -39,7 +39,7 @@ void ResourceDeleteHandler::handle(const http::HttpRequest &req, http::HttpRespo
             throw std::runtime_error("文件未找到");
         }
 
-        std::string owner = trim(rs->getString("username"));
+        std::string owner = formatUtil_.trim(rs->getString("username"));
 
         LOG_INFO << "owner: [" << owner << "] currentUser: [" << currentUser << "]";
         // 判断是否是当前用户
@@ -77,6 +77,16 @@ void ResourceDeleteHandler::handle(const http::HttpRequest &req, http::HttpRespo
                 std::string filenameNoExt = filename.substr(0, filename.find_last_of('.'));
                 std::string thumbPath = "/root/uploads/videos/thumbnails/" + filenameNoExt + ".jpg";
                 std::remove(thumbPath.c_str());
+
+                // const std::string video_name=filename;
+                sql = "DELETE FROM video_stats WHERE video_name = ?";
+                mysqlUtil_.executeUpdate(sql,filename);
+
+                sql = "DELETE FROM comments WHERE video_name = ?";
+                mysqlUtil_.executeUpdate(sql,filename);
+
+                sql = "DELETE FROM video_likes WHERE video_name = ?";
+                mysqlUtil_.executeUpdate(sql,filename);
             }
             
 
@@ -99,6 +109,7 @@ void ResourceDeleteHandler::handle(const http::HttpRequest &req, http::HttpRespo
     {
         // 捕获异常，返回错误信息
         json failureResp;
+        LOG_ERROR<<e.what();
         failureResp["status"] = "error";
         failureResp["message"] = e.what();
         std::string failureBody = failureResp.dump(4);
@@ -111,13 +122,3 @@ void ResourceDeleteHandler::handle(const http::HttpRequest &req, http::HttpRespo
 }
 
 
-// 辅助函数：去除字符串前后空白符
-std::string ResourceDeleteHandler::trim(const std::string& str) {
-    const auto strBegin = str.find_first_not_of(" \t\r\n");
-    if (strBegin == std::string::npos) return ""; // 全是空白
-
-    const auto strEnd = str.find_last_not_of(" \t\r\n");
-    const auto strRange = strEnd - strBegin + 1;
-
-    return str.substr(strBegin, strRange);
-}

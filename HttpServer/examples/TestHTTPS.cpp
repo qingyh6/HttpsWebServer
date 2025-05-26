@@ -1,12 +1,16 @@
 #include "../include/http/HttpServer.h"
 #include <muduo/base/Logging.h>
-#include "../include/ssl/SslConfigLoader.h"
-
+// #include "../include/ssl/SslConfigLoader.h"
+#include "../include/ssl/SslConfig.h"
+#include <muduo/base/Logging.h>
+#include <muduo/net/EventLoop.h>
+#include <muduo/base/AsyncLogging.h>
+#include <muduo/base/TimeZone.h>
 int main(int argc, char *argv[])
 {
-    // 设置日志级别
+    // // 设置日志级别
     muduo::Logger::setLogLevel(muduo::Logger::DEBUG);
-
+ 
     try
     {
         // 创建服务器实例
@@ -23,8 +27,11 @@ int main(int argc, char *argv[])
         }
 
         // 设置证书文件（使用绝对路径）
-        std::string certFile = "/etc/letsencrypt/live/growingshark.asia/fullchain.pem";
-        std::string keyFile = "/etc/letsencrypt/live/growingshark.asia/privkey.pem";
+        // std::string certFile = "/etc/letsencrypt/live/growingshark.asia/fullchain.pem";
+        // std::string keyFile = "/etc/letsencrypt/live/growingshark.asia/privkey.pem";
+
+        std::string certFile = "/etc/myssl/server.crt";
+        std::string keyFile = "/etc//myssl/server.key";
 
         LOG_INFO << "Loading certificate from: " << certFile;
         LOG_INFO << "Loading private key from: " << keyFile;
@@ -37,6 +44,7 @@ int main(int argc, char *argv[])
         if (access(certFile.c_str(), R_OK) != 0)
         {
             LOG_FATAL << "Cannot read certificate file: " << certFile;
+            std::cout << "Cannot read certificate file: " << certFile;
             return 1;
         }
         if (access(keyFile.c_str(), R_OK) != 0)
@@ -59,14 +67,18 @@ int main(int argc, char *argv[])
             resp->setBody("Hello, World!"); });
 
         // 启动服务器
-        LOG_INFO << "Server starting on port 443...";
+        // LOG_INFO << "Server starting on port 443...";
+        std::cout<< "Server starting on port 443...";
         serverPtr->start();
     }
     catch (const std::exception &e)
     {
-        LOG_FATAL << "Server start failed: " << e.what();
+        // LOG_FATAL << "Server start failed: " << e.what();
+         std::cout<< "Server start failed:";
         return 1;
     }
 
+
+    // log.stop();
     return 0;
 }

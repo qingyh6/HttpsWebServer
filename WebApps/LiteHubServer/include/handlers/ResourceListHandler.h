@@ -20,7 +20,6 @@ public:
 
     void handle(const http::HttpRequest& req, http::HttpResponse* resp) override;
 
-    std::string formatFileTime(std::filesystem::file_time_type ftime) ;
     json getUploadHistoryJson() ;
 
 private:

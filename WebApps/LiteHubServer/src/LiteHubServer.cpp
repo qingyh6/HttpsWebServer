@@ -17,6 +17,11 @@
 #include "../include/handlers/VideoCentorHandler.h"
 #include "../include/handlers/VideoMetaHandler.h"
 #include "../include/handlers/VideoStreamHandler.h"
+#include "../include/handlers/VideoDetailHandler.h"
+#include "../include/handlers/VideoPushCommentHandler.h"
+#include "../include/handlers/VideoGetCommentHandler.h"
+#include "../include/handlers/VideoLikeHandler.h"
+#include "../include/handlers/VideoViewCountsHandler.h"
 
 #include "../include/LiteHubServer.h"
 #include "../../../HttpServer/include/http/HttpRequest.h"
@@ -27,8 +32,9 @@ using namespace http;
 
 LiteHubServer::LiteHubServer(int port,
                            const std::string &name,
+                           bool useSSL,
                            muduo::net::TcpServer::Option option)
-    : httpServer_(port, name, option), maxOnline_(0)
+    : httpServer_(port, name, useSSL,option), maxOnline_(0)
 {
     initialize();
 }
@@ -46,7 +52,7 @@ void LiteHubServer::start()
 void LiteHubServer::initialize()
 {
     // 初始化数据库连接池
-    http::MysqlUtil::init("tcp://127.0.0.1:3306", "root", "123456", "webdb", 5);
+    http::MysqlUtil::init("tcp://127.0.0.1:3306", "root", "root", "webdb", 5);
     // 初始化会话
     initializeSession();
     // 初始化中间件
@@ -111,9 +117,9 @@ void LiteHubServer::initializeRouter()
     // // 后台界面
     // httpServer_.Get("/backend", std::make_shared<GameBackendHandler>(this));
     // // 后台数据获取
-    // httpServer_.Get("/backend_data", [this](const http::HttpRequest& req, http::HttpResponse* resp) {
-    //     getBackendData(req, resp);
-    // });
+    httpServer_.Get("/backend_data", [this](const http::HttpRequest& req, http::HttpResponse* resp) {
+        getBackendData(req, resp);
+    });
 
     httpServer_.Get("/test", [this](const http::HttpRequest&, http::HttpResponse* resp) {
         resp->setBody("Test OK");
@@ -129,7 +135,13 @@ void LiteHubServer::initializeRouter()
     httpServer_.Get("/metavideo", std::make_shared<VideoMetaHandler>(this));
     // httpServer_.addRoute(http::HttpRequest::kGet, R"(^/videos/([^/]+\.mp4)$)", std::make_shared<VideoStreamHandler>(this));
     httpServer_.addRoute(http::HttpRequest::kGet, "/videos/:filename", std::make_shared<VideoStreamHandler>(this));
-    
+    httpServer_.addRoute(http::HttpRequest::kGet, "/video_detail/:filename", std::make_shared<VideoDetailHandler>(this));
+    httpServer_.Post("/video/push_comments", std::make_shared<VideoPushCommentHandler>(this));
+    // httpServer_.Post("/video/get_comments", std::make_shared<VideoGetCommentHandler>(this));
+    httpServer_.addRoute(http::HttpRequest::kGet, "/video/get_comments/:filename", std::make_shared<VideoGetCommentHandler>(this));
+
+    httpServer_.Post("/video/like", std::make_shared<VideoLikeHandler>(this));
+    httpServer_.Post("/video/view_counts", std::make_shared<VideoViewCountsHandler>(this));
 }
 
 void LiteHubServer::restartChessGameVsAi(const http::HttpRequest &req, http::HttpResponse *resp)
@@ -221,6 +233,8 @@ void LiteHubServer::getBackendData(const http::HttpRequest &req, http::HttpRespo
         resp->setCloseConnection(true);
     }
 }
+
+
 
 void LiteHubServer::packageResp(const std::string &version,
                              http::HttpResponse::HttpStatusCode statusCode,

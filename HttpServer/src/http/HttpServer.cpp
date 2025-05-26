@@ -30,12 +30,39 @@ HttpServer::HttpServer(int port,
 }
 
 // 服务器运行函数
+// void HttpServer::start()
+// {
+//     LOG_WARN << "HttpServer[" << server_.name() << "] starts listening on" << server_.ipPort();
+//     server_.start();
+//     mainLoop_.loop();
+// }
+
+
 void HttpServer::start()
 {
     LOG_WARN << "HttpServer[" << server_.name() << "] starts listening on" << server_.ipPort();
+
+
+    //  // 加载 SSL 配置
+    // ssl::SslConfig sslConfig;
+
+    // LOG_INFO << "Loading certificate from: " << certFile;
+    // LOG_INFO << "Loading private key from: " << keyFile;
+
+    
+    // sslConfig.setCertificateFile(certFile);
+    // sslConfig.setPrivateKeyFile(keyFile);
+    // sslConfig.setProtocolVersion(ssl::SSLVersion::TLS_1_2);
+    // setSslConfig(sslConfig);
+    // // sslCtx_=ssl::SslContext(sslConfig);
+    // sslCtx_ = std::make_unique<ssl::SslContext>(sslConfig);
+
+
     server_.start();
     mainLoop_.loop();
 }
+
+
 
 void HttpServer::initialize()
 {
@@ -66,13 +93,16 @@ void HttpServer::onConnection(const muduo::net::TcpConnectionPtr& conn)
 {
     if (conn->connected())
     {
+       
         if (useSSL_)
         {
+            LOG_INFO<<"进入Https连接";
             auto sslConn = std::make_unique<ssl::SslConnection>(conn, sslCtx_.get());
             sslConn->setMessageCallback(
                 std::bind(&HttpServer::onMessage, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
             sslConns_[conn] = std::move(sslConn);
             sslConns_[conn]->startHandshake();
+            LOG_INFO<<"进入Https连接完成";
         }
         conn->setContext(HttpContext());
     }

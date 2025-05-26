@@ -44,7 +44,8 @@ int main(int argc, char* argv[])
 
 
   std::string serverName = "HttpServer";
-  int port = 80;
+  int port = 80;//这个是http的端口
+  // int port = 443;//这个是http的端口
   
   // 参数解析
   int opt;
@@ -66,10 +67,12 @@ int main(int argc, char* argv[])
 
  
   muduo::Logger::setLogLevel(muduo::Logger::INFO);
-  LiteHubServer server(port, serverName);
+  LiteHubServer server(port, serverName,false);//启用https
   server.setThreadNum(4);
+  // std::string certFile = "/etc/myssl/server.crt";
+  // std::string keyFile = "/etc/myssl/server.key";
+  // server.start(certFile,keyFile);
   server.start();
-
 
   log.stop();
 }

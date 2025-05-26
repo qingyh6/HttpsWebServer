@@ -33,6 +33,7 @@ class LiteHubServer
 public:
     LiteHubServer(int port,
                  const std::string& name,
+                 bool useSSL=false,
                  muduo::net::TcpServer::Option option = muduo::net::TcpServer::kNoReusePort);
 
     void setThreadNum(int numThreads);
@@ -105,11 +106,16 @@ private:
     friend class ResourceUploadHandler;
     friend class ResourceDownloadHandler;
     friend class ResourceDeleteHandler;
-      friend class BackendStatusHandler;
+    friend class BackendStatusHandler;
 
     friend class VideoCentorHandler;
     friend class VideoMetaHandler;
     friend class VideoStreamHandler;
+    friend class VideoDetailHandler;
+    friend class VideoPushCommentHandler;
+    friend class VideoGetCommentHandler;
+    friend class VideoLikeHandler;
+    friend class VideoViewCountsHandler;
 
 private:
     enum GameType

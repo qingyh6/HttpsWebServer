@@ -1,57 +1,178 @@
-<!-- /status 页面 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>状态监控 - LiteHub</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #eef2f5; }
-    .container { padding: 2rem; max-width: 800px; margin: auto; background: white; border-radius: 8px; }
-    h2 { color: #007BFF; }
-    .section { margin-bottom: 2rem; }
-    .card { background: #f9f9f9; padding: 1rem; border-left: 5px solid #007BFF; margin-top: 0.5rem; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f1f5f9;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 60px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h2, h3 {
+      color: #007BFF;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .card {
+      background: #f9fbfc;
+      padding: 1rem 1.5rem;
+      border-left: 5px solid #007BFF;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    }
+
+    .stat-item {
+      margin: 14px 0;
+      font-size: 15px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .loading {
+      color: #888;
+      font-style: italic;
+    }
+
+    /* 返回菜单按钮优化 */
+    #menu-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #00c3ff;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 30px;
+      font-size: 15px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,195,255,0.4);
+      transition: background 0.3s ease, transform 0.2s ease;
+      z-index: 1000;
+    }
+
+    #menu-button:hover {
+      background: #00a7e6;
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
-    <div id="menu-button" style="position: absolute; top: 20px; left: 20px; font-size: 1.2em; color: #00c3ff; cursor: pointer; text-shadow: 0 0 5px #00c3ff;">
-    返回菜单
-    </div>
+  <div id="menu-button">← 返回菜单</div>
+
   <div class="container">
-    <h2>📊 状态监控</h2>
+    <h2>📊 系统状态监控</h2>
+
+    <div class="section">
+      <h3>👥 用户统计</h3>
+		 <div class="card">
+        当前在线人数：<strong id="curOnline"> </strong><br>
+        历史最高在线：<strong id="maxOnline"> </strong><br>
+        注册用户总数：<strong id="totalUser"> </strong>
+		</div>
+    </div>
 
     <div class="section">
       <h3>⏱ 限流状态</h3>
       <div class="card">
-        <!-- 当前 QPS：18 / 上限 20<br> -->
-        剩余令牌数：4
+        剩余令牌数：<strong id="tokenCount">4</strong>
       </div>
     </div>
 
     <div class="section">
       <h3>🧠 缓存统计</h3>
       <div class="card">
-        总请求数：250<br>
-        缓存命中：184（命中率 73.6%）<br>
-        未命中：66
+        总请求数：<strong id="totalRequest">250</strong><br>
+        缓存命中：<strong id="cacheHit">184</strong>（命中率 <strong id="hitRate">73.6%</strong>）<br>
+        未命中：<strong id="cacheMiss">66</strong>
       </div>
     </div>
 
     <div class="section">
       <h3>📦 Gzip 压缩统计</h3>
       <div class="card">
-        启用率：64%<br>
-        平均压缩比：41.2%
+        启用率：<strong id="gzipRate">64%</strong><br>
+        平均压缩比：<strong id="gzipRatio">41.2%</strong>
       </div>
     </div>
   </div>
+
   <script>
-
     function Menu() {
-         window.location.href = '/menu';
+      window.location.href = '/menu';
     }
-
-    // 绑定点击事件到后台管理按钮
     document.getElementById('menu-button').addEventListener('click', Menu);
+
+
+    
+    const eventSource = new EventSource('/sse');
+
+    eventSource.onmessage = function(event) {
+      try {
+        const data = JSON.parse(event.data);
+        document.getElementById('curOnline').textContent = data.curOnline;
+        document.getElementById('maxOnline').textContent = data.maxOnline;
+        document.getElementById('totalUser').textContent = data.totalUser;
+      } catch (e) {
+        console.error("Failed to parse SSE data", e);
+      }
+    };
+
+    eventSource.onerror = function(err) {
+      console.error("SSE error:", err);
+      // 可选：自动重连或显示断线提示
+    };
+    //  function updateStats() {
+    //       console.log('Fetching backend data...');
+          
+    //       fetch('/backend_data', {
+    //           method: 'GET',
+    //           headers: {
+    //               'Accept': 'application/json',
+    //               'Content-Type': 'application/json'
+    //           },
+    //           credentials: 'same-origin'  // 添加凭证支持
+    //       })
+    //       .then(response => {
+    //           console.log('Response status:', response.status);
+    //           if (!response.ok) {
+    //               throw new Error('Network response was not ok: ' + response.status);
+    //           }
+    //           return response.json();
+    //       })
+    //       .then(data => {
+    //           console.log('Received data:', data);
+    //           document.getElementById('curOnline').textContent = data.curOnline;
+    //           document.getElementById('maxOnline').textContent = data.maxOnline;
+    //           document.getElementById('totalUser').textContent = data.totalUser;
+    //       })
+    //       .catch(error => {
+    //           console.error('Error:', error);
+    //           ['curOnline', 'maxOnline', 'totalUser'].forEach(id => {
+    //               document.getElementById(id).textContent = 'Error loading data';
+    //           });
+    //       });
+    //   }
+
+    //   window.addEventListener('load', updateStats);
+    //   setInterval(updateStats, 30000);
   </script>
 </body>
 </html>

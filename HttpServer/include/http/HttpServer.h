@@ -25,6 +25,7 @@
 #include "../middleware/gzip/GzipMiddleware.h"
 #include "../ssl/SslConnection.h"
 #include "../ssl/SslContext.h"
+#include "../ssl/SslConfig.h"
 
 class HttpRequest;
 class HttpResponse;
@@ -49,6 +50,7 @@ public:
     }
 
     void start();
+    // void start(const std::string &certFile,const std::string &keyFile);
 
     muduo::net::EventLoop* getLoop() const 
     { 

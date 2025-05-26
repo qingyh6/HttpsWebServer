@@ -48,12 +48,13 @@ void VideoMetaHandler::handle(const http::HttpRequest &req, http::HttpResponse *
 
             std::string thumbnailBase64 = base64_encode(oss.str());
 
+            LOG_INFO<<"进入视频元信息:name"<<name;
             // 构造 JSON 对象
             json videoInfo = {
                 {"name", name},
                 {"duration", duration},
                 {"thumbnail", "data:image/jpeg;base64," + thumbnailBase64},
-                {"video_url", "/videos/" + videoName}
+                {"video_url", videoName}
             };
 
             result.push_back(videoInfo);

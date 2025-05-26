@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>视频详情</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #f7f8fa; }
+    .video-section { padding: 20px; text-align: center; background: #fff; }
+    .comment-section { padding: 20px; }
+     .comment-input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    #comment-input {
+      flex: 1;
+      height: 30px;
+      resize: none;
+      padding: 5px;
+      font-size: 16px;
+    }
+    #submit-comment {
+      display: none; /* 初始隐藏 */
+      height: 30px;
+      /* padding: 0 12px; */
+      padding :5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    textarea { width: 100%; height: 20px; margin-bottom: 10px; }
+    /* .comment { background: #fff; 
+      padding: 10px 15px;
+       margin: 10px 0; 
+       border-radius: 6px; 
+       box-shadow: 0 2px 6px rgba(0,0,0,0.05); } */
+      .comment { 
+          padding: 10px 0;
+        } 
+      .comment.root {
+      border-bottom: 1px solid #eee;
+    }
+    .comment .meta { font-size: 12px; color: #666; }
+    .comment .content {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+
+    .reply-btn {
+      font-size: 12px;
+      color: #007bff;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .reply-btn:hover {
+      text-decoration: underline;
+      color: #0056b3;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="video-section">
+    <video id="video-player" controls width="80%">
+      <source id="video-source" src="" type="video/mp4" />
+    </video>
+    <div id="video-title" style="margin-top: 10px; font-weight: bold;"></div>
+  </div>
+
+  <div id="video-stats" style="margin: 15px 0; background: #fff; padding: 10px; border-radius: 6px;">
+    <span id="view-count">播放量: 0</span> |
+    <span id="like-count">点赞数: 0</span>
+    <button id="like-btn" style="margin-left: 10px;">点赞 👍</button>
+  </div>
+
+  <div class="comment-section">
+    <h3>评论区</h3>
+    <div class="comment-input-wrapper">
+      <textarea id="comment-input" placeholder="留下你的评论..."></textarea>
+      <button id="submit-comment">发表评论</button>
+    </div>
+    <div id="comment-list"></div>
+  </div>
+
+  <script>
+    let currentReplyForm = null; // 全局变量，记录当前的回复框
+    const videoName = decodeURIComponent(window.location.pathname.split('/').pop());
+    document.getElementById('video-source').src = `/videos/${videoName}`;
+    document.getElementById('video-player').load();
+    console.log(videoName);
+
+
+     const commentInput = document.getElementById('comment-input');
+    const submitButton = document.getElementById('submit-comment');
+
+    commentInput.addEventListener('focus', () => {
+      submitButton.style.display = 'inline-block';
+    });
+
+    document.getElementById('like-btn').addEventListener('click', () => {
+      fetch(`/video/like`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          videoName: videoName,
+          option: option   //"query"/"like"/"unlike"
+        })
+      }).then(res => {
+        if (res.ok) updateStats();
+        else alert('点赞操作失败');
+      });
+    });
+
+
+    function loadComments() {
+      console.log("加载评论啦");
+      fetch(`/video/get_comments/${(videoName)}`)
+        .then(res => res.json())
+        .then(comments => {
+          const list = document.getElementById('comment-list');
+          list.innerHTML = '';
+          comments.forEach(c => {
+            list.appendChild(renderComment(c,true));
+          });
+        });
+    }
+
+    // 递归渲染评论和回复框
+    function renderComment(comment, isRoot = false) {
+        const div = document.createElement('div');
+        // div.className = 'comment';
+        // div.className = 'comment root'; // 对于 parent_id = 0 的评论
+        div.className = isRoot ? 'comment root' : 'comment'; // 仅主评论加 root 类
+
+        // 评论HTML结构
+        div.innerHTML = `
+          <div class="meta"><strong>${comment.user_name}</strong></div>
+          <div class="content">${comment.content}</div>
+          <div class="meta">
+            ${comment.created_at} 
+            <button class="reply-btn">回复</button>
+          </div>
+        `;
+
+        // 添加回复按钮逻辑
+        const replyBtn = div.querySelector('.reply-btn');
+          replyBtn.addEventListener('click', (e) => {
+              e.stopPropagation(); // 防止冒泡影响 document 的 click 监听
+
+              // 如果已有回复框，先移除
+              if (currentReplyForm) {
+                currentReplyForm.remove();
+                currentReplyForm = null;
+              }
+
+              // 如果当前评论下已经有 reply-form，就不再添加
+              if (div.querySelector('.reply-form')) return;
+
+              const replyForm = document.createElement('div');
+              replyForm.className = 'reply-form';
+              replyForm.style.marginTop = '10px';
+              replyForm.innerHTML = `
+                <input type="text" class="reply-input" placeholder="输入回复内容" style="width: 80%; padding: 4px;" />
+                <button class="submit-reply" style="padding: 4px 10px;">提交</button>
+              `;
+              div.appendChild(replyForm);
+              currentReplyForm = replyForm; // 记录当前回复框
+
+              const submitBtn = replyForm.querySelector('.submit-reply');
+              submitBtn.addEventListener('click', () => {
+                const content = replyForm.querySelector('.reply-input').value.trim();
+                if (!content) return;
+
+                const replyData = {
+                  videoName: videoName,
+                  parent_id: comment.id,
+                  content: content
+                };
+
+                fetch('/video/push_comments', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(replyData)
+                }).then(response => {
+                  if (response.ok) {
+                    loadComments(); // 刷新评论区
+                  } else {
+                    alert('回复失败');
+                  }
+                });
+              });
+            });
+
+            // 监听点击空白处关闭回复框
+            document.addEventListener('click', (e) => {
+              if (
+                currentReplyForm &&
+                !e.target.closest('.reply-form') &&
+                !e.target.classList.contains('reply-btn')
+              ) {
+                currentReplyForm.remove();
+                currentReplyForm = null;
+              }
+            });
+
+
+          // 渲染子评论（递归）
+          if (comment.replies && comment.replies.length > 0) {
+            const childContainer = document.createElement('div');
+            childContainer.style.marginLeft = '20px';
+            comment.replies.forEach(reply => {
+              childContainer.appendChild(renderComment(reply));
+            });
+            div.appendChild(childContainer);
+          }
+
+          return div;
+      }
+
+    // 提交评论按钮点击事件
+    document.getElementById('submit-comment').addEventListener('click', () => {
+      const content = document.getElementById('comment-input').value;
+      if (!content.trim()) return;
+
+      const commentData = {
+        videoName: videoName,
+        // user_id: 1,          // 实际使用中应由 JWT 或登录系统提供
+        parent_id: 0,        // 顶层评论默认是 0
+        content: content.trim()
+      };
+
+      fetch('/video/push_comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(commentData)
+      }).then(response => {
+        if (response.ok) {
+          document.getElementById('comment-input').value = '';
+          loadComments(); // 重新加载评论
+        } else {
+          alert('评论发布失败');
+        }
+      });
+    });
+
+
+    function updateStats() {
+        fetch(`/video/like`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            videoName: videoName,
+            option: "query"
+          })
+        })
+        .then(res => res.json())
+        .then(data => {
+          // document.getElementById('view-count').innerText = `播放量: ${data.views}`;
+          document.getElementById('like-count').innerText = `点赞数: ${data.likeCount}`;
+          document.getElementById('like-btn').innerText = data.liked ? '取消点赞 👎' : '点赞 👍';
+        });
+      }
+
+      document.getElementById('like-btn').addEventListener('click', () => {
+            // 判断当前是点赞还是取消点赞（根据按钮文字或变量状态）
+            const isLiked = document.getElementById('like-btn').innerText.includes('取消');
+
+            fetch(`/video/like`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                videoName: videoName,
+                option: isLiked ? "unlike" : "like"
+              })
+            })
+            .then(res => {
+              if (res.ok) updateStats();
+              else alert('点赞操作失败');
+            });
+          });
+        
+          function increaseViewCount() {
+            fetch(`/video/view_counts`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ videoName: videoName })
+            })
+            .then(res => res.json())
+            .then(data=>{
+              if(data.view_count!=undefined)
+            {
+              document.getElementById('view-count').innerText = `播放量: ${data.view_count}`;
+            }
+            })
+            .catch(err => console.error('播放量增加失败:', err));
+          }
+
+      // 加载页面
+      window.addEventListener('load', function() {
+          increaseViewCount();  // 播放量 +1
+          updateStats();  // 页面初始化时刷新点赞状态
+          loadComments();// 你已有的评论加载函数
+      });
+
+  </script>
+</body>
+</html>

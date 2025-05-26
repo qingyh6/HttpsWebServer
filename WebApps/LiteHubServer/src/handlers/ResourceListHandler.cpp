@@ -77,27 +77,4 @@ json ResourceListHandler::getUploadHistoryJson() {
 
     return result;
 
-    // for (const auto& entry : fs::recursive_directory_iterator(rootDir)) {
-    //     if (fs::is_regular_file(entry)) {
-    //         std::string filename = entry.path().filename().string();
-    //         std::string uploadTime = formatFileTime(fs::last_write_time(entry));
-            
-    //         result["files"].push_back({
-    //             {"filename", filename},
-    //             {"uploadTime", uploadTime},
-    //             {"relativePath", entry.path().string()}  // 如果需要下载时路径,绝对路径
-
-
-        
-    //         });
-    //     }
-    // }
-
-    // // 可选：按时间降序排序
-    // std::sort(result["files"].begin(), result["files"].end(),
-    //     [](const json& a, const json& b) {
-    //         return a["uploadTime"] > b["uploadTime"];
-    //     });
-
-    // return result;
 }

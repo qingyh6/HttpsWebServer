@@ -29,7 +29,7 @@ void VideoStreamHandler::handle(const http::HttpRequest &req, http::HttpResponse
         }
     
 
-        std::string path = url_decode(req.path()); // e.g. /video/sample.mp4
+        std::string path = formatUtil_.url_decode(req.path()); // e.g. /video/sample.mp4
         std::string filename = path.substr(strlen("/video/")); // 截取文件名
         std::string videoPath = "/root/uploads/videos" + filename;
         LOG_INFO<<"进入视频播放流"<<videoPath;
@@ -100,25 +100,4 @@ void VideoStreamHandler::handle(const http::HttpRequest &req, http::HttpResponse
         resp->setContentLength(failureBody.size());
         resp->setBody(failureBody);
     }
-}
-
-std::string VideoStreamHandler::url_decode(std::string encoded) {
-    std::string result;
-    char ch;
-    int i, ii;
-    for (i = 0; i < encoded.length(); i++) {
-        if (int(encoded[i]) == int('%')) {
-            sscanf(encoded.substr(i + 1, 2).c_str(), "%x", &ii);
-            ch = static_cast<char>(ii);
-            result += ch;
-            i += 2;
-        }
-        else if (encoded[i] == '+') {
-            result += ' ';
-        }
-        else {
-            result += encoded[i];
-        }
-    }
-    return result;
 }

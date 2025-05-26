@@ -1,6 +1,7 @@
 #include "../include/handlers/ResourceUploadHandler.h"
 #include <fstream>
 #include <iostream>
+#include <iomanip>
 
 
 void ResourceUploadHandler::handle(const http::HttpRequest &req, http::HttpResponse *resp)
@@ -47,6 +48,7 @@ void ResourceUploadHandler::handle(const http::HttpRequest &req, http::HttpRespo
             std::time_t now_time_t = std::chrono::system_clock::to_time_t(now);
             std::stringstream time_ss;
             time_ss << std::put_time(std::localtime(&now_time_t), "%Y-%m-%d %H:%M");
+            // time_ss << std::strftime(std::localtime(&now_time_t), "%Y-%m-%d %H:%M");
             
             uploadtime = time_ss.str();
 
@@ -162,6 +164,13 @@ bool ResourceUploadHandler::insertUploadRecord(const std::string& filename,
                          isvideo = VALUES(isvideo))";
     try {
         int affected = mysqlUtil_.executeUpdate(sql, filename, username, uploadtime, duration,isvideo);
+        if (isvideo)
+        {
+            LOG_INFO<<"默认点赞量写数据";
+            const std::string video_name=filename;
+            const std::string sql = "INSERT INTO video_stats (video_name, view_count, like_count) VALUES (?, 0, 0) ON DUPLICATE KEY UPDATE video_name=video_name";
+            int affected_=mysqlUtil_.executeUpdate(sql, video_name);
+        }
         return affected > 0;
     } catch (const std::exception& e) {
         LOG_ERROR << "数据库插入失败: " << e.what();
