@@ -3,7 +3,24 @@
 ## 项目介绍
 本项目是基于C++实现自定义的 HttpServer 框架，该项目包括 HTTP/HTTPS 支持、动态路由处理、会话管理等功能。
 
+# 功能演示
+## 注册登录功能
+![注册登录](https://github.com/user-attachments/assets/856799ba-45d9-461f-833a-e2a9b311838c)
 
+下棋功能
+![下棋功能](https://github.com/user-attachments/assets/aeb451cc-58ed-4d21-bf8f-750b6d7a8e99)
+
+![上传功能](https://github.com/user-attachments/assets/70144d1d-370f-40f3-94ac-459547baa43a)
+![删除功能](https://github.com/user-attachments/assets/1089abc5-57fe-4356-a433-55a9289ccc65)
+![下载功能](https://github.com/user-attachments/assets/015669e9-d4df-473a-af92-66a0d55fabdd)
+
+![评论功能](https://github.com/user-attachments/assets/64c9cbd5-18a2-41ce-a08d-214729851584)
+![播放量与点赞数统计](https://github.com/user-attachments/assets/f31f024f-1f00-4c8a-9bfc-1234cc65e705)
+
+![后台管理](https://github.com/user-attachments/assets/b82d73d9-2152-48bd-825d-5079d4aa4144)
+![视频播放功能_1](https://github.com/user-attachments/assets/c97986cf-4953-4b2a-a32c-7948f214843a)
+
+![视频播放功能_2](https://github.com/user-attachments/assets/f22b92cb-a65f-4dcd-a177-413ede9a64e2)
 
 ## 更新日志
  ### ✅限流功能（2025.4.30）
