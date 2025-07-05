@@ -9,10 +9,7 @@
 
 ![注册登录](https://github.com/user-attachments/assets/856799ba-45d9-461f-833a-e2a9b311838c)
 
-## 下棋功能
 
-实现了简单的人机对战功能，目前功能不够强大
-![下棋功能](https://github.com/user-attachments/assets/aeb451cc-58ed-4d21-bf8f-750b6d7a8e99)
 
 ## 资源中心
 这个界面维护了一个已上传文件的记录，并且提供了上传文件功能，删除文件功能，下载文件功能，以下是具体分析。
@@ -61,6 +58,11 @@
 root用户可以查看一些统计信息，如当前在线人数、历史最高在线人数;令牌桶的剩余，gzip压缩情况等等。
 
 ![后台管理](https://github.com/user-attachments/assets/b82d73d9-2152-48bd-825d-5079d4aa4144)
+
+## 五子棋对战
+实现了简单的五子棋人机对战功能，目前对战功能还不是很智能，后续有待改进。
+
+![下棋功能](https://github.com/user-attachments/assets/aeb451cc-58ed-4d21-bf8f-750b6d7a8e99)
 
 
 ## 更新日志
