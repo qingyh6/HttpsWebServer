@@ -6,45 +6,60 @@
 # 功能演示
 ## 注册登录功能
 通过用户名+密码先注册再登录；
+
 ![注册登录](https://github.com/user-attachments/assets/856799ba-45d9-461f-833a-e2a9b311838c)
 
 ## 下棋功能
+
 实现了简单的人机对战功能，目前功能不够强大
 ![下棋功能](https://github.com/user-attachments/assets/aeb451cc-58ed-4d21-bf8f-750b6d7a8e99)
+
 ## 资源中心
 这个界面维护了一个已上传文件的记录，并且提供了上传文件功能，删除文件功能，下载文件功能，以下是具体分析。
+
 ### 上传文件
 可以上传各种文件，包括视频文件、图片文件、pdf文件、压缩包文件等。
+
 ![上传功能](https://github.com/user-attachments/assets/70144d1d-370f-40f3-94ac-459547baa43a)
+
 ### 删除文件
 可以删除自己上传的文件，在上传的时候要判断是不是自己上传的，不能删除别人上传的文件。
+
 ![删除功能](https://github.com/user-attachments/assets/1089abc5-57fe-4356-a433-55a9289ccc65)
+
 不能删除别人的文件（user1上传文件，随后登录了user_2，user_2不能删除别人上传的文件，可以删除自己的文件）
-管理员root账户可以删除任何人的文件
+管理员root账户可以删除任何用户上传的文件
+
 ![不能删除他人文件](https://github.com/user-attachments/assets/bd0291aa-4e4c-4ab3-af50-6e2ed1d76e6d)
 
 ### 下载文件
 所有用户都可以下载已上传的文件，所有人共享
+
 ![下载功能](https://github.com/user-attachments/assets/015669e9-d4df-473a-af92-66a0d55fabdd)
 
 ## 视频中心
 ### 视频播放
 支持倍速播放，全屏播放，拖动进度条等功能
+
 ![视频播放功能_1](https://github.com/user-attachments/assets/c97986cf-4953-4b2a-a32c-7948f214843a)
+
 ![视频播放功能_2](https://github.com/user-attachments/assets/f22b92cb-a65f-4dcd-a177-413ede9a64e2)
 
 ### 视频评论
 支持在视频下方评论内容，支持多级评论，可以在别人的评论下，继续评论
+
 ![评论功能](https://github.com/user-attachments/assets/64c9cbd5-18a2-41ce-a08d-214729851584)
 
 ### 统计视频播放量和点赞量
 播放量：每加载一次视频，播放量+1；
 点赞量：一个用户对一个视频只能点赞一次，可以取消点赞
+
 ![播放量与点赞数统计](https://github.com/user-attachments/assets/f31f024f-1f00-4c8a-9bfc-1234cc65e705)
 
 
 ### 后台管理
 root用户可以查看一些统计信息，如当前在线人数、历史最高在线人数;令牌桶的剩余，gzip压缩情况等等。
+
 ![后台管理](https://github.com/user-attachments/assets/b82d73d9-2152-48bd-825d-5079d4aa4144)
 
 
