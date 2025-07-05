@@ -4,7 +4,7 @@
 本项目是基于C++实现自定义的 HttpServer 框架，该项目包括 HTTP/HTTPS 支持、动态路由处理、会话管理等功能。
 
 # 功能演示
-视频播放网址：https://www.bilibili.com/video/BV1WVjozZEpt
+视频播放网址：【基于Http高性能LiteHub】 https://www.bilibili.com/video/BV1WVjozZEpt/?share_source=copy_web&vd_source=5d1ebec52c2c96234fb7a82f7b6cdb70
 ## 注册登录功能
 通过用户名+密码先注册再登录；
 
