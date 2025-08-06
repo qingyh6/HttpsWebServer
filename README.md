@@ -1,10 +1,22 @@
 
 
-## 项目介绍
+# 项目介绍
 本项目是基于C++实现自定义的 HttpServer 框架，该项目包括 HTTP/HTTPS 支持、动态路由处理、会话管理等功能。
 技术栈：网络框架+线程池+数据库连接池+MySQL+Http解析+高可用+高并发+高性能
 
-# 功能演示
+## 系列文章分析
+[1.环境配置](https://blog.csdn.net/weixin_52288941/article/details/148282652) \
+[2.HTTP请求与响应报文分析](https://blog.csdn.net/weixin_52288941/article/details/148894084) \
+[3.文件下载与视频播放](https://blog.csdn.net/weixin_52288941/article/details/149244004) \
+[4.数据库连接池](https://blog.csdn.net/weixin_52288941/article/details/149192046) \
+[5.会话管理](https://blog.csdn.net/weixin_52288941/article/details/148919423) \
+[6.中间件Gizp压缩](https://blog.csdn.net/weixin_52288941/article/details/149132273) \
+[7.中间件限流实现](https://blog.csdn.net/weixin_52288941/article/details/149110612) \
+[8.中间件跨域访问CORS](https://blog.csdn.net/weixin_52288941/article/details/149087296) 
+
+
+
+## 功能演示
 视频播放网址：【基于Http高性能LiteHub】 https://www.bilibili.com/video/BV1WVjozZEpt/?share_source=copy_web&vd_source=5d1ebec52c2c96234fb7a82f7b6cdb70
 ## 注册登录功能
 通过用户名+密码先注册再登录；
