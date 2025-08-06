@@ -27,10 +27,12 @@
     }
   ```
 ## 接口功能测试
-这里测试的是视频的Range字段请求是否有效；
+这里测试的是视频的Range字段请求是否有效，视频播放功能
 分析如下，模拟了50个线程（模拟用户），每个线程发送20次请求，在10秒内发送所有请求（50*20=1000次请求）。
-<img width="1613" height="847" alt="image" src="https://github.com/user-attachments/assets/0129606c-93c2-488a-9b09-47b6034472d2" />
+![单范围查询](https://github.com/user-attachments/assets/0345c1fa-4550-404d-8c8c-b6b84e1d2c65)
 
+随后开了一个线程，依次请求0~3000，3000~8000，8000~16000，16000~20000，20000~30000的range范围的数据（设置的每次请求的范围字段不一样）
+![多节点访问查询](https://github.com/user-attachments/assets/a54a5903-9914-4a5d-bd95-ebbefc0a9156)
 
 
 ## 单接口性能测试
