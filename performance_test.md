@@ -4,6 +4,28 @@
 | 单接口性能测试 | ab             | 测试大文件全量下载的带宽和吞吐极限（但不适合测 Range） |
 | 场景并发测试  | JMeter         | 模拟播放器并发拉流场景，逐块下载视频，测 Range 逻辑  |
 
+## 如何避免鉴权
+在项目的功能模块中，是通过会话管理来确保用户登录了的。但是为了性能测试，不可能模拟每一个真实用户（创建不同的账号）来访问，实际上在本项目约定了一个字段，只有在请求头中带上字段**TestBypass=perf-token**，就可以有效地跳过鉴权，而专注于在服务器中比较容易出现瓶颈的地方。在本项目中，比较容易出现瓶颈的地方有视频的播放（同一时刻大量用户请求），大文件上传下载等，这些等都是可能引起性能瓶颈的地方，测试时也是主要关注这些部分的。
+  ```c++
+    auto session = server_->getSessionManager()->getSession(req, resp);
+    bool isTestBypass = false;
+    std::string bypassHeader = req.getHeader("TestBypass"); //如果是测试的话，在发送请求时带上这个字段就可以
+    if (bypassHeader == "perf-token") {
+        LOG_INFO << "[PerfTest] Bypassing login check.";
+        isTestBypass = true;
+    }
+
+    if (session->getValue("isLoggedIn") != "true" && !isTestBypass) {
+        json errorResp;
+        errorResp["status"] = "error";
+        errorResp["message"] = "Unauthorized";
+        std::string errorBody = errorResp.dump();
+        server_->packageResp(req.getVersion(), http::HttpResponse::k401Unauthorized,
+                            "Unauthorized", true, "application/json",
+                            errorBody.size(), errorBody, resp);
+        return;
+    }
+  ```
 ## 接口功能测试
 这里测试的是视频的Range字段请求是否有效；
 分析如下，模拟了50个线程（模拟用户），每个线程发送20次请求，在10秒内发送所有请求（50*20=1000次请求）。
