@@ -15,6 +15,7 @@
 [8.中间件跨域访问CORS](https://blog.csdn.net/weixin_52288941/article/details/149087296) 
 
 
+[性能测试](./performance_test.md)
 
 ## 功能演示
 视频网址：[基于Http高性能LiteHub](https://www.bilibili.com/video/BV1WVjozZEpt/?share_source=copy_web&vd_source=5d1ebec52c2c96234fb7a82f7b6cdb70)
