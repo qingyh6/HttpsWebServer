@@ -18,7 +18,19 @@ Session::Session(const std::string& sessionId, SessionManager* sessionManager, i
 // 检查会话是否已过期
 bool Session::isExpired() const
 {
-    return std::chrono::system_clock::now() > expiryTime_;
+    // return std::chrono::system_clock::now() > expiryTime_;
+    if (std::chrono::system_clock::now() > expiryTime_)
+    {   
+         if (sessionManager_)
+        {
+            sessionManager_->destroySession(sessionId_); // 如果会话已过期，销毁会话
+        } 
+        return true;        // 返回会话已过期
+    }
+    else
+    {
+        return false;
+    }
 }
 
 // 刷新会话的过期时间
