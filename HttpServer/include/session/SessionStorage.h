@@ -1,7 +1,7 @@
 #pragma once
 #include "Session.h"
 #include <memory>
-
+#include <mutex>
 namespace http
 {
 namespace session
@@ -14,6 +14,8 @@ public:
     virtual void save(std::shared_ptr<Session> session) = 0;
     virtual std::shared_ptr<Session> load(const std::string& sessionId) = 0;
     virtual void remove(const std::string& sessionId) = 0;
+    // 返回所有会话，方便定时清理
+    virtual const std::unordered_map<std::string, std::shared_ptr<Session>> & getAllSessions() const = 0;
 };
 
 // 基于内存的会话存储实现
@@ -23,7 +25,12 @@ public:
     void save(std::shared_ptr<Session> session) override;
     std::shared_ptr<Session> load(const std::string& sessionId) override;
     void remove(const std::string& sessionId) override;
+    const std::unordered_map<std::string, std::shared_ptr<Session>> & getAllSessions() const override {
+            std::lock_guard<std::mutex> lock(mutex_);
+            return sessions_;
+        }
 private:
+    mutable  std::mutex mutex_;
     std::unordered_map<std::string, std::shared_ptr<Session>> sessions_;
 };
 
