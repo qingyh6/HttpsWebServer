@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <iostream>
 #include <sstream>
-
+#include <chrono>
 namespace http
 {
 namespace session
@@ -12,7 +12,24 @@ namespace session
 SessionManager::SessionManager(std::unique_ptr<SessionStorage> storage)
     : storage_(std::move(storage)) 
     , rng_(std::random_device{}()) // 初始化随机数生成器，用于生成随机的会话ID
-{}
+     , stopCleaner_(false)          //用于是否停止后台线程
+{
+     // 启动清理线程
+    cleanerThread_ = std::thread([this]() {
+        while (!stopCleaner_) {
+            std::this_thread::sleep_for(std::chrono::minutes(10)); // 每10分钟清理一次
+            cleanExpiredSessions();
+        }
+    });
+}
+
+SessionManager::~SessionManager()
+{
+    stopCleaner_ = true;
+    if (cleanerThread_.joinable()) {
+        cleanerThread_.join();
+    }
+}
 
 // 从请求中获取或创建会话，也就是说，如果请求中包含会话ID，则从存储中加载会话，否则创建一个新的会话
 std::shared_ptr<Session> SessionManager::getSession(const HttpRequest& req, HttpResponse* resp)
@@ -66,6 +83,14 @@ void SessionManager::cleanExpiredSessions()
     // 注意：这个实现依赖于具体的存储实现
     // 对于内存存储，可以在加载时检查是否过期
     // 对于其他存储的实现，可能需要定期清理过期会话
+     auto allSessions = storage_->getAllSessions(); // 假设存储有这个接口
+        for (auto& s : allSessions) {
+            if (s.second->isExpired()) {
+                std::cout << "Cleaning expired session: " << s.first << std::endl;
+                storage_->remove(s.first);
+            }
+        }
+
 }
 
 std::string SessionManager::getSessionIdFromCookie(const HttpRequest& req)
