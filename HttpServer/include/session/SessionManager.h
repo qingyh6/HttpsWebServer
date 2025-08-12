@@ -5,6 +5,8 @@
 #include "../http/HttpResponse.h"
 #include <memory>
 #include <random>
+#include <thread>
+#include <atomic>
 
 namespace http
 {
@@ -15,7 +17,7 @@ class SessionManager
 {
 public:
     explicit SessionManager(std::unique_ptr<SessionStorage> storage);
-
+    ~SessionManager();
     // 从请求中获取或创建会话
     std::shared_ptr<Session> getSession(const HttpRequest& req, HttpResponse* resp);
     
@@ -38,6 +40,8 @@ private:
 private:
     std::unique_ptr<SessionStorage> storage_;
     std::mt19937 rng_; // 用于生成随机会话id
+    std::thread cleanerThread_;      // 定时清理会话的后台线程
+    std::atomic<bool> stopCleaner_;  // 线程停止标志
 };
 
 } // namespace session
